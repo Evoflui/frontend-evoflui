@@ -1,0 +1,32 @@
+#header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+#lista {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+}
+
+#lista-item {
+    list-style: none;
+}
+
+#lista-item-link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20;
+    color: #8D23DE;
+}
+
+#lista-item-botao {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20;
+    color: #F1F1F1;
+    background-color: #4B1E8F;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+}

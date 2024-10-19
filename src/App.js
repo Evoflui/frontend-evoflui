@@ -1,8 +1,9 @@
+import Header from "./ComponentesGerais/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <h1>teste</h1>
+      <Header/>
     </div>
   );
 }
