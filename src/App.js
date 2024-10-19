@@ -1,9 +1,10 @@
 import Header from "./ComponentesGerais/Header/Header";
+import Home from "./Paginas/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Home/>
     </div>
   );
 }
