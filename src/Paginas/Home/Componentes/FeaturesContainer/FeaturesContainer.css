@@ -1,6 +1,7 @@
 .features-container {
     background-image: url(../../../../assets/imagens/homebackground.svg);
-    padding: 290px 20px;
+    background-size: cover;
+    padding: 200px 20px;
 }
 
 .right-content {
@@ -9,6 +10,7 @@
     border-radius: 0.938rem;
     padding: 1rem 2.5rem;
     margin-left: auto;
+    margin-top: 200px;
 }
 
 .left-content {
@@ -17,7 +19,7 @@
     border-radius: 0.938rem;
     padding: 0.5rem 1rem;
     margin-right: auto;
-    margin-top: 400px;
+    margin-top: 600px;
 }
 
 .second-right-content {
@@ -26,7 +28,7 @@
     border-radius: 0.938rem;
     padding: 1rem 2.5rem;
     margin-left: auto;
-    margin-top: 430px;
+    margin-top: 630px;
 }
 
 .top-info {
