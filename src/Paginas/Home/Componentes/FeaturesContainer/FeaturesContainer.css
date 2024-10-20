@@ -1,7 +1,9 @@
 .features-container {
     background-image: url(../../../../assets/imagens/homebackground.svg);
     background-size: cover;
-    padding: 200px 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
 .right-content {
@@ -9,17 +11,15 @@
     max-width: 33.313rem;
     border-radius: 0.938rem;
     padding: 1rem 2.5rem;
-    margin-left: auto;
-    margin-top: 200px;
+    margin-top: 16rem;
 }
 
 .left-content {
     background-color: #D92378;
     max-width: 33.313rem;
     border-radius: 0.938rem;
-    padding: 0.5rem 1rem;
-    margin-right: auto;
-    margin-top: 600px;
+    padding: 1rem 2.5rem;
+    margin-top: 16rem;
 }
 
 .second-right-content {
@@ -27,8 +27,7 @@
     max-width: 33.313rem;
     border-radius: 0.938rem;
     padding: 1rem 2.5rem;
-    margin-left: auto;
-    margin-top: 630px;
+    margin: 24rem 0 10rem 0;
 }
 
 .top-info {
