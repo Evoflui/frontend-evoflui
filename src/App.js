@@ -1,4 +1,4 @@
-import Header from "./ComponentesGerais/Header/Header";
+import React from 'react';
 import Home from "./Paginas/Home/Home";
 
 function App() {

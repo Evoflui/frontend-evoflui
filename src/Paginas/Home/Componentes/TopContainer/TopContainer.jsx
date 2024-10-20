@@ -1,3 +1,4 @@
+import React from 'react';
 import './TopContainer.css'
 import VetorImagem from '../../../../assets/imagens/vetorAutismo.svg';
 
