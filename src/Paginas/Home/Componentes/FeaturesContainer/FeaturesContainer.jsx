@@ -1,3 +1,4 @@
+import React from 'react';
 import './FeaturesContainer.css'
 import LampIcon from '../../../../assets/icones/lampicon.svg'
 import PeopleIcon from '../../../../assets/icones/peopleIcon.svg'

@@ -1,0 +1,34 @@
+.container {
+    background-color: #D7D7DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0;
+}
+
+.info-container{
+    margin-left: 10px;
+}
+
+.info-title {
+    color: #4B1E8F;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.info-text {
+    color: #1E388F;
+    font-size: 1.25rem;
+    max-width: 759px;
+    font-weight: 500;
+}
+
+.info-button {
+    color: #FFF;
+    background-color: #8D23DE;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+}
