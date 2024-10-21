@@ -5,6 +5,7 @@ import TopContainer from "./Componentes/TopContainer/TopContainer";
 import UserFeedbacks from "./Componentes/UserFeedbacks/UserFeedbacks";
 import InformationContainer from './Componentes/InformationContainer/InformationContainer';
 import PlanosContainer from './Componentes/PlanosContainer/PlanosContainer';
+import BottomContainer from './Componentes/BottomContainer/BottomContainer';
 
 function Home(){
     return(
@@ -15,6 +16,7 @@ function Home(){
             <UserFeedbacks/>
             <InformationContainer/>
             <PlanosContainer/>
+            <BottomContainer/>
         </div>
     )
 }

@@ -1,0 +1,42 @@
+.bottom-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../../../../assets/imagens/bottomContainerBackground.svg');
+}
+.image-bottom-container {
+margin-bottom: 10px;
+}
+
+.title-bottom-container {
+    font-size: 2.5rem;
+    margin: 5px 0;
+    color: #F1F1F1;
+}
+
+.text-bottom-container {
+    font-size: 1.25rem;
+    font-weight: 500;
+    max-width: 66rem;
+    text-align: center;
+    color: #F1F1F1;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.bottom-signup-button {
+    color: #1E388F;
+    background-color: #FFDE00;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 5px 10px;
+}
