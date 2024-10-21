@@ -50,7 +50,7 @@ function UserFeedbacks() {
             imagem: Person5,
             descricao: 'Imagem de uma mulher negra utilizando uma regata branca',
             nome: 'Isabela Duarte',
-            depoimento: 'A jornada de aprendizado da plataforma superou minhas expectativas. As ferramentas são fáceis de usar e realmente ajudaram minha filha a se desenvolver socialmente. A comunidade de tutores também é muito acolhedora, sempre compartilhando experiências e dicas.'
+            depoimento: 'A jornada de aprendizado da plataforma superou minhas expectativas. As ferramentas são fáceis de usar e ajudaram minha filha a se desenvolver socialmente. A comunidade de tutores também é muito acolhedora, sempre compartilhando experiências e dicas.'
         }
     ]
     return (
