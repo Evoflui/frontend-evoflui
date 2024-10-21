@@ -6,6 +6,7 @@ import UserFeedbacks from "./Componentes/UserFeedbacks/UserFeedbacks";
 import InformationContainer from './Componentes/InformationContainer/InformationContainer';
 import PlanosContainer from './Componentes/PlanosContainer/PlanosContainer';
 import BottomContainer from './Componentes/BottomContainer/BottomContainer';
+import Footer from '../../ComponentesGerais/Footer/Footer';
 
 function Home(){
     return(
@@ -17,6 +18,7 @@ function Home(){
             <InformationContainer/>
             <PlanosContainer/>
             <BottomContainer/>
+            <Footer/>
         </div>
     )
 }

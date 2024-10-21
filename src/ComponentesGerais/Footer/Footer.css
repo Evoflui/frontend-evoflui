@@ -1,0 +1,46 @@
+.footer {
+    margin: 2rem 2rem 0.85rem;
+}
+
+.footer-part-one {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.lista-item {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.lista-item-link {
+    text-decoration: none;
+    color: #5A7C98;
+    font-weight: 500;
+}
+
+.linha-horizontal {
+    border-color: #5A7C98;
+    border-width: 0.5px;
+    border-style: solid;
+    box-sizing:border-box;
+    width:100%;  
+}
+
+.copyright-footer {
+    color: #5A7C98;
+    font-weight: 500;
+}
+
+.footer-part-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social-medias-footer {
+    display: flex;
+    gap: 10px;
+}
