@@ -2,6 +2,7 @@ import './Footer.css'
 import LogoFooter from '../../assets/icones/logoFooter.svg'
 import LinkedinIcon from '../../assets/icones/linkedinIcon.svg'
 import InstagramIcon from '../../assets/icones/instagramIcon.svg'
+import { Link } from 'react-router-dom'; 
 
 function Footer(){
     return(
@@ -9,10 +10,10 @@ function Footer(){
             <section className='footer-part-one'>
                 <img src={LogoFooter} alt="Logomarca do Evoflui"/>
                 <ul className='lista-footer'>
-                    <li className="lista-item"><a href="#" className='lista-item-link'>Sobre Nós</a></li>
-                    <li className="lista-item"><a href="#" className='lista-item-link'>Fale Conosco</a></li>
-                    <li className="lista-item"><a href="#" className='lista-item-link'>Política de Privacidade</a></li>
-                    <li className="lista-item"><a href="#" className='lista-item-link'>Termos de Uso</a></li>
+                    <li className="lista-item"><Link to="/sobre-nos" className='lista-item-link'>Sobre Nós</Link></li>
+                    <li className="lista-item"><Link to="/fale-conosco" className='lista-item-link'>Fale Conosco</Link></li>
+                    <li className="lista-item"><Link to="/politica-de-privacidade" className='lista-item-link'>Política de Privacidade</Link></li>
+                    <li className="lista-item"><Link to="/termos-de-uso" className='lista-item-link'>Termos de Uso</Link></li>
                 </ul>
             </section>
 
