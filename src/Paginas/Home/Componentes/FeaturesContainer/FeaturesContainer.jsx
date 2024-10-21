@@ -8,7 +8,7 @@ function FeaturesContainer() {
     return (
         <div>
             <main className="features-container">
-                <section className="right-content">
+                <section className="purple-content">
                     <div className="top-info">
                         <img src={LampIcon} alt="ícone de uma lâmpada" />
                         <h1 className="title-info">Trilha de Desenvolvimento</h1>
@@ -16,7 +16,7 @@ function FeaturesContainer() {
                     <p className="text-info">Oferecemos uma trilha de desenvolvimento social para pessoas autistas e, para os tutores, uma trilha focada na conscientização sobre a neurodivergência, com recursos práticos de apoio.</p>
                 </section>
 
-                <section className="left-content">
+                <section className="pink-content">
                     <div className="top-info">
                         <img src={ConfettiIcon} alt="ícone de várias pessoas em conjuntos" />
                         <h1 className="title-info">Fórum de Tutores</h1>
@@ -26,12 +26,12 @@ function FeaturesContainer() {
                         crianças neurodivergentes.</p>
                 </section>
 
-                <section className="second-right-content">
+                <section className="purple-content">
                     <div className="top-info">
                         <img src={PeopleIcon} alt="ícone de confetti" />
                         <h1 className="title-info">Eventos Especiais</h1>
                     </div>
-                    <p className="text-info">Promovemos e divulgamos encontros especializados voltados para o autismo, visando o engajamento e a troca de experiências.</p>
+                    <p className="text-info">Promovemos e divulgamos encontros especializados voltados para o autismo, visando o engajamento e a troca de experiências entre pessoas.</p>
                 </section>
 
             </main>
