@@ -8,6 +8,7 @@ import ReturnIcon2 from '../../../../assets/icones/returnIcon2.svg'
 import BusinessIcon from '../../../../assets/icones/businessIcon.svg'
 import AnalyticsIcon from '../../../../assets/icones/analyticsIcon.svg'
 import LibraryIcon from '../../../../assets/icones/libraryIcon.svg'
+import { Link } from 'react-router-dom';
 
 function PlanosContainer(){
     return(
@@ -41,7 +42,7 @@ function PlanosContainer(){
 
                         <h2 className='plano-month-price'>R$11,99</h2>
                         <p className='plano-month-type'>Plano mensal</p>
-                        <a href="#" className='plano-month-button'>Assine Agora</a>
+                        <Link to='./pagamento' className='plano-month-button'>Assine Agora</Link>
                     </section>
 
 
@@ -66,7 +67,7 @@ function PlanosContainer(){
 
                         <h2 className='plano-month-price'>R$13,99</h2>
                         <p className='plano-month-type'>Plano mensal</p>
-                        <a href="#" className='plano-month-button'>Assine Agora</a>
+                        <Link to='./pagamento' className='plano-month-button'>Assine Agora</Link>
                     </section>
 
 
@@ -91,7 +92,7 @@ function PlanosContainer(){
 
                         <h2 className='plano-year-price'>Valor Negociável</h2>
                         <p className='plano-year-type'>Plano anual</p>
-                        <a href="#" className='plano-year-button'>Entre em Contato</a>
+                        <Link to='./fale-conosco' className='plano-year-button'>Entre em Contato</Link>
                     </section>
                 </article>
             </main>
