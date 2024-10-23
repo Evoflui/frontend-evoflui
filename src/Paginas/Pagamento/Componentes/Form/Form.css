@@ -1,0 +1,27 @@
+.payment-container {
+    display: flex;
+}
+
+.label-form {
+    font-size: 1.25rem;
+    color: #414141;
+    font-weight: 600;
+}
+
+.card-options-container {
+    display: flex;
+}
+
+.card-option {
+    display: flex;
+    align-items: center;
+}
+
+
+.card-label {
+    font-size: 1.25rem;
+    color: #414141;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}

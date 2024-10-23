@@ -4,16 +4,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
 }
 
 
 .payment-section-title {
     color: #F1F1F1;
-    font-size: 3.75rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 .payment-section-subtitle {
     color: #F1F1F1;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
