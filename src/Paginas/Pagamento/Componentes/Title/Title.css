@@ -1,0 +1,19 @@
+.payment-section-top {
+    background-color: #D92378;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.payment-section-title {
+    color: #F1F1F1;
+    font-size: 3.75rem;
+    margin: 0;
+}
+
+.payment-section-subtitle {
+    color: #F1F1F1;
+    font-size: 1.25rem;
+}
