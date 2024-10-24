@@ -1,5 +1,8 @@
 .payment-container {
     display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
 }
 
 .label-form {
@@ -10,11 +13,17 @@
 
 .card-options-container {
     display: flex;
+    gap: 10px;
+    margin: 6px 0 10px;
 }
 
 .card-option {
     display: flex;
     align-items: center;
+    background-color: #D8D8D8;
+    border: 2px solid #414141;
+    border-radius: 10px;
+    padding: 0.5rem 0.7rem;
 }
 
 
@@ -24,4 +33,88 @@
     font-weight: 800;
     display: flex;
     align-items: center;
+    gap: 3px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none; 
+    background-color: transparent;
+    border: 2px solid #414141;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #414141;
+    border-color: #414141;
+  }
+
+  .data-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .data-input {
+    background-color: #F1F1F1;
+    border: 2px solid #414141;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    width: 557px;
+    height: 41px;
+    font-size: 1rem;
+    color: #414141;
+    padding-left: 10px;
+    font-weight: 500;
+    margin: 6px 0 10px;
+  }
+
+.final-data-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.final-data-element {
+    display: flex;
+    flex-direction: column;
+    margin-right: 11px;
+}
+
+.final-data-input {
+    background-color: #F1F1F1;
+    border: 2px solid #414141;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    width: 265px;
+    height: 41px;
+    font-size: 1rem;
+    color: #414141;
+    padding-left: 10px;
+    font-weight: 500;
+    margin: 6px 0 10px;
+}
+
+input[type="date"] {
+    appearance: none;
+}
+
+
+.submit-input-form {
+    width: 573px;
+    height: 41px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    background-color: #D92378;
+    color: #F1F1F1;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    padding: 5px 0;
+    cursor: pointer;
 }
