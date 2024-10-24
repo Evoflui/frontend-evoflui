@@ -36,7 +36,7 @@ function UserFeedbacks() {
             imagem: Person3,
             descricao: 'Imagem de uma homem branco usando óculos',
             nome: 'Dante Ferraz',
-            depoimento: 'A plataforma foi essencial para o desenvolvimento social do meu filho. As trilhas de aprendizado são incríveis e realmente fazem a diferença no dia a dia. O fórum para tutores é ótimo para compartilhar experiências e apoio.'
+            depoimento: 'A plataforma foi essencial para o desenvolvimento social do meu filho. As trilhas de aprendizado são incríveis e realmente fazem a diferença no dia a dia. O fórum é uma ótima opção para aqueles que querem trocar experiências e conhecimento.'
         },
         {
             id: '4',
@@ -50,7 +50,7 @@ function UserFeedbacks() {
             imagem: Person5,
             descricao: 'Imagem de uma mulher negra utilizando uma regata branca',
             nome: 'Isabela Duarte',
-            depoimento: 'A jornada de aprendizado da plataforma superou minhas expectativas. As ferramentas são fáceis de usar e ajudaram minha filha a se desenvolver socialmente. A comunidade de tutores é acolhedora, sempre compartilhando experiências.'
+            depoimento: 'A jornada de aprendizado da plataforma superou minhas expectativas. As ferramentas são fáceis de usar e ajudaram minha filha a se desenvolver. A comunidade de tutores é acolhedora, sempre compartilhando experiências.'
         }
     ]
     return (
