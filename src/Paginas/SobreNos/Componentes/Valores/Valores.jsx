@@ -16,9 +16,11 @@ function Valores() {
                     ambiente acolhedor e colaborativo.</p>
             </div>
 
-            <div className='texto-visao'>
-                <p> Nossa Visão </p>
-                <img src={LinhaVisao} alt="Linha Roxa" />
+            <div className='texto-missao'>
+            <img src={LinhaVisao} alt="Linha Roxa" />
+            <p class="cor-roxa">Nossa Visão</p>
+
+                
             </div>
 
             <div className='descricao-visao'>
