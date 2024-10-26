@@ -1,7 +1,7 @@
 .container-quem-somos .sobre-nos-texto p {
     color: #FFFFFF; 
     font-size: 48px; 
-    font-weight: 500; 
+    font-weight: bold; 
     text-align: center;
     margin: 10px 0; 
 }
@@ -40,16 +40,16 @@
 .imagem-e-texto img {
     max-width: 1300px; 
     height: auto; 
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border: 10px solid #009CDE;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 95px;
+    border: 15px solid #009CDE;
 }
 
 
 .imagem-e-texto p {
     color: #0077A9;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 65px; 
     margin-right: 60px;
 }
