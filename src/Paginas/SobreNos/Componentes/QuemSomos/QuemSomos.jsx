@@ -1,6 +1,6 @@
 import React from 'react';
 import './QuemSomos.css';
-import Camisa from '../../../../assets/imagens/camisa1.svg';
+import Camisa from '../../../../assets/imagens/camisetaa.svg';
 
 function QuemSomos() {
     return (
