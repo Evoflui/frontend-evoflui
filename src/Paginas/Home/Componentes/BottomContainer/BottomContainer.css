@@ -9,17 +9,18 @@ margin-bottom: 10px;
 }
 
 .title-bottom-container {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 5px 0;
     color: #F1F1F1;
 }
 
 .text-bottom-container {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 500;
     max-width: 66rem;
     text-align: center;
     color: #F1F1F1;
+    margin: 5px 0 15px 0;
 }
 
 .button-container {
