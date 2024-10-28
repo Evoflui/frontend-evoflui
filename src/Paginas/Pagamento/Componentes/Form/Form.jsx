@@ -61,7 +61,7 @@ function Form() {
         e.preventDefault();
         Swal.fire({
             title: "Pagamento efetuado!",
-            text: "Agradecemos a sua compra. Não se esqueça de verificar o seu e-mail para futuras atualizações.",
+            text: "Agradecemos a sua assinatura. Não se esqueça de verificar o seu e-mail para futuras atualizações.",
             icon: "success"
         }).then(() => {
             e.target.reset(); 
