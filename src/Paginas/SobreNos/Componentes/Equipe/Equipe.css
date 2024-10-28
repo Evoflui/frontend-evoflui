@@ -1,5 +1,8 @@
+.texto-equipe {
+margin-top: 100px;
+}
 .por-tras {
-    font-size: 50px;
+    font-size: 60px;
     color: #414141;
     text-align: center;
     font-weight: bold;
@@ -7,11 +10,11 @@
 }
 
 .conheca {
-    font-size: 20px;
+    font-size: 30px;
     color: #414141;
     text-align: center;
     font-weight: 500;
-    margin-top: 0;
+    margin: 0;
 }
 
 .container-equipe {
@@ -24,6 +27,13 @@
     text-align: center;
     flex-wrap: wrap;
     gap: 80px; 
+    padding: 50px 0;
+    margin-top: 15px;
+}
+
+.container-divisao {
+    display: flex;
+    gap: 100px;
 }
 
 .fotos {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './QuemSomos.css';
-import Camisa from '../../../../assets/imagens/camisetaa.svg';
+import Camisa from '../../../../assets/imagens/Camiseta.png';
 
 function QuemSomos() {
     return (
@@ -18,7 +18,7 @@ function QuemSomos() {
             </div>
 
             <div className='imagem-e-texto'>
-                <img src={Camisa} alt="Camisa branco com a logomarca do evoflui" />
+                <img src={Camisa} alt="Camisa branco com o logomarca do evoflui" />
                 <p> No EvoFlui, acreditamos que o desenvolvimento pessoal e o apoio mútuo são pilares
                     fundamentais para o bem-estar e a inclusão de pessoas com TEA (Transtorno do
                     Espectro Autista). Nossa plataforma foi criada com o objetivo de oferecer uma trilha de
