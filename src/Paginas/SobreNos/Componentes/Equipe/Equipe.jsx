@@ -1,9 +1,13 @@
 import React from 'react';
 import './Equipe.css';
 import Aleksandra from '../../../../assets/imagens/aleksandraa.svg';
-import Caroline from '../../../../assets/imagens/caroline.svg';
+import Caroline from '../../../../assets/imagens/carolinee.svg';
 import Elton from '../../../../assets/imagens/elton.svg';
 import Gustavo from '../../../../assets/imagens/gustavo.svg';
+import Josineudo from '../../../../assets/imagens/josineudo.svg';
+import Leonardo from '../../../../assets/imagens/leonardo.svg';
+import Nicole from '../../../../assets/imagens/nicole.svg';
+import Vinicius from '../../../../assets/imagens/vinicius.svg';
 
 function Equipe() {
     return (
@@ -16,7 +20,7 @@ function Equipe() {
                 <div className='container-equipe'>
 
                     <div className='fotos'>
-                        
+
                         <img src={Aleksandra} alt="Foto membro" />
                         <div className='funcoes'></div>
                         <p className='nome'> Aleksandra Marto</p>
@@ -27,8 +31,8 @@ function Equipe() {
                         <img src={Caroline} alt="Foto membro" />
                         <div className='funcoes'></div>
                         <p className='nome'> Caroline Fernandes</p>
-                        <p className='funcao'> Financeiro & 
-                        Desenvolvedor Front-end</p>
+                        <p className='funcao'> Financeiro & <br></br>
+                            Desenvolvedor Front-end</p>
                     </div>
 
 
@@ -36,53 +40,50 @@ function Equipe() {
                         <img src={Elton} alt="Foto membro" />
                         <div className='funcoes'></div>
                         <p className='nome'> Elton Santos </p>
-                        <p className='funcao'> Scrum Master &
-                        Desenvolvedor Fulstack</p>
+                        <p className='funcao'> Scrum Master & <br></br>
+                            Desenvolvedor Fulstack</p>
                     </div>
 
                     <div className='fotos'>
                         <img src={Gustavo} alt="Foto membro" />
                         <div className='funcoes'></div>
                         <p className='nome'> Gustavo Portela </p>
-                        <p className='funcao'> UI/UX Designer &
-                        Desenvolvedor Front-end</p>
-                    </div> 
-
-                  
-
-                    <div className='fotos'>
-                        
-                        <img src={Aleksandra} alt="Foto membro" />
-                        <div className='funcoes'></div>
-                        <p className='nome'> Aleksandra Marto</p>
-                        <p className='funcao'> Desenvolvedora Back-End</p>
+                        <p className='funcao'> UI/UX Designer & <br></br>
+                            Desenvolvedor Front-end</p>
                     </div>
 
                     <div className='fotos'>
-                        <img src={Caroline} alt="Foto membro" />
+
+                        <img src={Josineudo} alt="Foto membro" />
                         <div className='funcoes'></div>
-                        <p className='nome'> Caroline Fernandes</p>
-                        <p className='funcao'> Financeiro & 
-                        Desenvolvedor Front-end</p>
+                        <p className='nome'>Josineudo Arruda</p>
+                        <p className='funcao'> Product Owner & <br></br>
+                            Desenvolvedor Fullstack</p>
+                    </div>
+
+                    <div className='fotos'>
+                        <img src={Leonardo} alt="Foto membro" />
+                        <div className='funcoes'></div>
+                        <p className='nome'> Leonardo Melo </p>
+                        <p className='funcao'> Desenvolvedor Back-end</p>
                     </div>
 
 
                     <div className='fotos'>
-                        <img src={Elton} alt="Foto membro" />
+                        <img src={Nicole} alt="Foto membro" />
                         <div className='funcoes'></div>
-                        <p className='nome'> Elton Santos </p>
-                        <p className='funcao'> Scrum Master &
-                        Desenvolvedor Fulstack</p>
+                        <p className='nome'> Nicole Marcondes </p>
+                        <p className='funcao'> Social Media & <br></br>
+                            Desenvolvedor Front-end</p>
                     </div>
 
                     <div className='fotos'>
-                        <img src={Gustavo} alt="Foto membro" />
+                        <img src={Vinicius} alt="Foto membro" />
                         <div className='funcoes'></div>
-                        <p className='nome'> Gustavo Portela </p>
-                        <p className='funcao'> UI/UX Designer &
-                        Desenvolvedor Front-end</p>
-                    </div> 
-                    
+                        <p className='nome'> Vinicius Cezario </p>
+                        <p className='funcao'>Desenvolvedor Back-end</p>
+                    </div>
+
                 </div>
             </div>
         </>
