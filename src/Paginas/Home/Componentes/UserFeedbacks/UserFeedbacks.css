@@ -21,7 +21,8 @@
 
 .user-container {
     background-color: #F3F3F3; 
-    max-width: 403px;
+    max-width: 700px;
+    min-height: 59vh;
     z-index: 1;
     padding: 15px 10px;
     border-radius: 15px;
@@ -32,17 +33,20 @@
 }
 
 .user-name {
-    font-size: 1.625rem;
+    font-size: 1.825rem;
     margin: 10px 0;
     color: #4B1E8F;
 }
 
 .user-text {
     font-weight: 500;
-    color: #4B1E8F;
-    margin: 0;
-    padding: 0;
-    font-size: 1.1rem;
+    color: #381172;
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+    font-size: 20.8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .swiper-slide {
@@ -58,6 +62,7 @@
     display: flex;
     justify-content: center; 
     width: 100%; 
+    align-items: stretch;
 }
 
 .swiper-slide {
@@ -65,6 +70,7 @@
     justify-content: center; 
     width: 100%; 
     gap: 10px;
+    align-items: stretch;
 }
 
 

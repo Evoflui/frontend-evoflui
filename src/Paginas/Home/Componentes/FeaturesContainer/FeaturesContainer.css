@@ -9,7 +9,7 @@
 
 .purple-content {
     background-color: #8D23DE;
-    max-width: 33.313rem;
+    max-width: 40rem;
     border-radius: 0.938rem;
     padding: 1rem 2.5rem;
     margin: 26vh 0;
@@ -18,7 +18,7 @@
 
 .pink-content {
     background-color: #D92378;
-    max-width: 33.313rem;
+    max-width: 40rem;
     border-radius: 0.938rem;
     padding: 1rem 2.5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -36,4 +36,6 @@
 
 .text-info {
     color: #FFF;
+    font-size: 1.5rem;
+    margin-top: 5px;
 }
