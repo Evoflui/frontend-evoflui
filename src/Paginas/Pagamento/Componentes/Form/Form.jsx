@@ -3,6 +3,7 @@ import PaymentImage from '../../../../assets/imagens/paymentImage.svg';
 import CardIcon from '../../../../assets/icones/cardIcon.svg';
 import React, { useRef, useEffect } from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
+import Swal from 'sweetalert2';
 
 function Form() {
 
@@ -56,12 +57,24 @@ function Form() {
         e.target.value = value;
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        Swal.fire({
+            title: "Pagamento efetuado!",
+            text: "Agradecemos a sua compra. Não se esqueça de verificar o seu e-mail para futuras atualizações.",
+            icon: "success"
+        }).then(() => {
+            e.target.reset(); 
+        });
+
+    };
+
     return (
         <div>
             <section className='payment-container'>
                 <img src={PaymentImage} alt="Ilustração de um moço e uma moça encima de uma plataforma que ilustra duas peças de um quebra-cabeça se cumprimentando" />
 
-                <form action="." className="payment-form">
+                <form action="." className="payment-form" onSubmit={handleSubmit}>
                     <label className='label-form'>Selecione o tipo de cartão</label>
                     <div className="card-options-container">
                         <div className='card-option'>
