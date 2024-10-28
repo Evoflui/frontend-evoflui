@@ -18,9 +18,8 @@ function Valores() {
 
             <div className='texto-missao'>
             <img src={LinhaVisao} alt="Linha Roxa" />
-            <p class="cor-roxa">Nossa Visão</p>
+            <p style={{ color: '#4B1E8F' }}>Nossa Visão</p>
 
-                
             </div>
 
             <div className='descricao-visao'>

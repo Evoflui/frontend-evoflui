@@ -26,7 +26,7 @@
 
 .container-valores .descricao p {
     color: #009CDE; 
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;  
     margin-top: 20px; 
     margin-left: 20px;
@@ -48,13 +48,9 @@
 
 .container-valores .descricao-visao p {
     color: #4B1E8F; 
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;  
     margin-top: 20px; 
     margin-right: 20px;
     text-align: right;
-}
-
-.cor-roxa {
-    color: #4B1E8F;
 }

@@ -19,17 +19,17 @@ function Equipe() {
             <div>
                 <div className='container-equipe'>
 
+                    <div className="container-divisao">
+
                     <div className='fotos'>
 
                         <img src={Aleksandra} alt="Foto membro" />
-                        <div className='funcoes'></div>
                         <p className='nome'> Aleksandra Marto</p>
                         <p className='funcao'> Desenvolvedora Back-End</p>
                     </div>
 
                     <div className='fotos'>
                         <img src={Caroline} alt="Foto membro" />
-                        <div className='funcoes'></div>
                         <p className='nome'> Caroline Fernandes</p>
                         <p className='funcao'> Financeiro & <br></br>
                             Desenvolvedor Front-end</p>
@@ -38,7 +38,6 @@ function Equipe() {
 
                     <div className='fotos'>
                         <img src={Elton} alt="Foto membro" />
-                        <div className='funcoes'></div>
                         <p className='nome'> Elton Santos </p>
                         <p className='funcao'> Scrum Master & <br></br>
                             Desenvolvedor Fulstack</p>
@@ -46,16 +45,17 @@ function Equipe() {
 
                     <div className='fotos'>
                         <img src={Gustavo} alt="Foto membro" />
-                        <div className='funcoes'></div>
                         <p className='nome'> Gustavo Portela </p>
                         <p className='funcao'> UI/UX Designer & <br></br>
                             Desenvolvedor Front-end</p>
                     </div>
+                    
+                    </div>
 
+                    <div className="container-divisao">
                     <div className='fotos'>
 
                         <img src={Josineudo} alt="Foto membro" />
-                        <div className='funcoes'></div>
                         <p className='nome'>Josineudo Arruda</p>
                         <p className='funcao'> Product Owner & <br></br>
                             Desenvolvedor Fullstack</p>
@@ -63,7 +63,6 @@ function Equipe() {
 
                     <div className='fotos'>
                         <img src={Leonardo} alt="Foto membro" />
-                        <div className='funcoes'></div>
                         <p className='nome'> Leonardo Melo </p>
                         <p className='funcao'> Desenvolvedor Back-end</p>
                     </div>
@@ -71,7 +70,6 @@ function Equipe() {
 
                     <div className='fotos'>
                         <img src={Nicole} alt="Foto membro" />
-                        <div className='funcoes'></div>
                         <p className='nome'> Nicole Marcondes </p>
                         <p className='funcao'> Social Media & <br></br>
                             Desenvolvedor Front-end</p>
@@ -79,11 +77,10 @@ function Equipe() {
 
                     <div className='fotos'>
                         <img src={Vinicius} alt="Foto membro" />
-                        <div className='funcoes'></div>
                         <p className='nome'> Vinicius Cezario </p>
                         <p className='funcao'>Desenvolvedor Back-end</p>
                     </div>
-
+</div>
                 </div>
             </div>
         </>
