@@ -2,9 +2,7 @@
     color: #009CDE; 
     font-size: 56px; 
     font-weight: bold;
-    margin: 0; 
-    margin-top: 50px;
-    margin-left: 20px;
+    margin: 50px 0 0 20px; 
     white-space: nowrap; 
 }
 
@@ -56,5 +54,5 @@
 }
 
 .container-valores {
-    margin: 0 60px;
+    margin: 0 60px 150px 60px;
 }

@@ -12,8 +12,8 @@ import Vinicius from '../../../../assets/imagens/vinicius.svg';
 function Equipe() {
     return (
         <>
-            <div className='container-equipe'>
-                <div>
+            <div>
+                <div className='container-equipe'>
 
                     <div className='texto-equipe'>
                         <p className='por-tras'> Por trás do Evoflui</p>
