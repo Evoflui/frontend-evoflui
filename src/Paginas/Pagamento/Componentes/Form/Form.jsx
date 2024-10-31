@@ -151,7 +151,7 @@ Swal.fire({
                                 ref={dateRef}
                             />
                         </div>
-                    </div>
+                    </div>  
 
                     <input type="submit" id="submit" value="Efetuar pagamento" className='submit-input-form' />
                 </form>
