@@ -11,6 +11,7 @@ function Form() {
     const numCardRef = useRef(null);
     const cvvRef = useRef(null);
     const dateRef = useRef(null);
+    const nomeRef = useRef(null);
 
     useEffect(() => {
         const formatCPF = (e) => {
@@ -43,6 +44,10 @@ function Form() {
             value = value.replace(/(\d{4})(\d{4})(\d{4})(\d+)/, '$1 $2 $3 $4');
         }
         e.target.value = value;
+    };
+
+    const formatName = (e) => {
+        e.target.value = e.target.value.replace(/[^a-zA-Z]/g, '');
     };
 
     const onlyNumbers = (e) => {
@@ -95,7 +100,7 @@ function Form() {
 
                     <div className="data-container">
                         <label className='label-form'>Nome</label>
-                        <input type="text" id="nome" placeholder='Digite como consta no cartão' className='data-input' required />
+                        <input type="text" id="nome" placeholder='Digite como consta no cartão' className='data-input' ref={nomeRef} onInput={formatName} required />
                     </div>
 
                     <div className="data-container">
