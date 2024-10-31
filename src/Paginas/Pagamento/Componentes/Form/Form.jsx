@@ -64,14 +64,33 @@ function Form() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        Swal.fire({
-            title: "Pagamento efetuado!",
-            text: "Agradecemos a sua assinatura. Não se esqueça de verificar o seu e-mail para futuras atualizações.",
-            icon: "success"
-        }).then(() => {
-            e.target.reset(); 
-        });
+        let timerInterval;
+Swal.fire({
+  title: "Pagamento em processo",
+  html: "Aguarde enquanto verificamos os dados...",
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading();
+    const timer = Swal.getPopup().querySelector("b");
+  },
+  willClose: () => {
+    clearInterval(timerInterval);
+  }
+}).then((result) => {
 
+  if (result.dismiss === Swal.DismissReason.timer) {
+    Swal.fire({
+        title: "Pagamento efetuado!",
+        text: "Agradecemos a sua assinatura. Não se esqueça de verificar o seu e-mail para futuras atualizações.",
+        icon: "success"
+    }).then(() => {
+        e.target.reset(); 
+    });
+
+  }
+});
+        
     };
 
     return (
