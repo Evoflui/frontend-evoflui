@@ -4,6 +4,9 @@ import React, { useRef, useEffect } from 'react';
 function ContactForm(){
 
     const telRef = useRef(null);
+    const nomeRef = useRef(null);
+    const emailRef = useRef(null);
+
 
     useEffect(() => {
         const formatTel = (e) => {
@@ -17,17 +20,21 @@ function ContactForm(){
         return () => telRef.current.removeEventListener('input', formatTel);
     }, []);
 
+    const formatName = (e) => {
+        e.target.value = e.target.value.replace(/[^a-zA-Z]/g, '');
+    };
+    
 
     return (
         <div>
             <section className="form-container">
                 <form className="contactform-form">
                     <div className="contactform-data-container">
-                    <input type="text" id="nome" placeholder='Nome completo' className='contactform-input' required />
+                    <input type="text" id="nome" placeholder='Nome completo' className='contactform-input' ref={nomeRef} required onInput={formatName} />
                     </div>
 
                     <div className="contactform-data-container">
-                    <input type="email" id="nome" placeholder='E-mail' className='contactform-input-two' required />
+                    <input type="email" id="nome" placeholder='E-mail' className='contactform-input-two' ref={emailRef} required/>
                     <input type="text" id="nome" placeholder='Telefone' className='contactform-input-two' ref={telRef} maxLength="14" minLength="14" required />
                     </div>
 
