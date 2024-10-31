@@ -1,9 +1,10 @@
-.texto-equipe {
-margin-top: 100px;
+.container-equipe {
+    margin: 50px 0;
 }
+
 .por-tras {
     font-size: 60px;
-    color: #414141;
+    color: #f1f1f1;
     text-align: center;
     font-weight: bold;
     margin: 0;
@@ -11,7 +12,7 @@ margin-top: 100px;
 
 .conheca {
     font-size: 30px;
-    color: #414141;
+    color: #F1F1F1;
     text-align: center;
     font-weight: 500;
     margin: 0;
@@ -20,7 +21,6 @@ margin-top: 100px;
 .container-equipe {
     background-color: #4B1E8F;
     width: 100%;
-    height: 900px;
     display: flex;
     flex-direction: row; 
     justify-content: center; 
