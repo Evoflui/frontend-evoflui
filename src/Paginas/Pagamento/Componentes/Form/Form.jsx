@@ -47,7 +47,7 @@ function Form() {
     };
 
     const formatName = (e) => {
-        e.target.value = e.target.value.replace(/[^a-zA-Z]/g, '');
+        e.target.value = e.target.value.replace(/[^a-zA-Z\s]/g, '');
     };
 
     const onlyNumbers = (e) => {

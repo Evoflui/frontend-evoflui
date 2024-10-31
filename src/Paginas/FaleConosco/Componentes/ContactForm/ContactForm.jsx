@@ -1,5 +1,6 @@
 import './ContactForm.css'
 import React, { useRef, useEffect } from 'react';
+import Swal from 'sweetalert2';
 
 function ContactForm(){
 
@@ -17,18 +18,41 @@ function ContactForm(){
         };
 
         telRef.current.addEventListener('input', formatTel);
-        return () => telRef.current.removeEventListener('input', formatTel);
     }, []);
 
     const formatName = (e) => {
-        e.target.value = e.target.value.replace(/[^a-zA-Z]/g, '');
+        e.target.value = e.target.value.replace(/[^a-zA-Z\s]/g, '');
     };
     
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        Swal.fire({
+            title: "Confirmar Envio?",
+            text: "Este é um e-mail que não poderá ser cancelado.",
+            icon: "info",
+            showCancelButton: true,
+            confirmButtonColor: "#009CDE",
+            cancelButtonColor: "#575757",
+            confirmButtonText: "Sim",
+            cancelButtonText: "Cancelar",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: "Enviado!",
+                text: "Seu e-mail foi enviado com sucesso. Entraremos em contato o mais rápido possível",
+                icon: "success"
+              }).then(() => {
+                e.target.reset(); 
+            });
+            }
+          });
+
+    }; 
 
     return (
         <div>
             <section className="form-container">
-                <form className="contactform-form">
+                <form className="contactform-form" onSubmit={handleSubmit}>
                     <div className="contactform-data-container">
                     <input type="text" id="nome" placeholder='Nome completo' className='contactform-input' ref={nomeRef} required onInput={formatName} />
                     </div>
