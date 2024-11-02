@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.caixa {
+    max-width: 100%;
+    background-color: #D92378;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-politica {
+    font-size: 36px;
+    color: #F1F1F1;
+    font-weight: bold;
+    text-align: center;
+}
+
+.caixa-atualizacao{
+    width: 436px;
+    height: 41px;
+    background-color: #D8D8D8 ;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+.atualizacao {
+    font-size: 20px;
+    color: #414141;
+    text-align: center;
+}
