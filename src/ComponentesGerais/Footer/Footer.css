@@ -19,12 +19,13 @@
     font-weight: 500;
 }
 
-.linha-horizontal {
+.linha-horizontal-footer {
     border-color: #5A7C98;
     border-width: 0.5px;
     border-style: solid;
     box-sizing:border-box;
     width:100%;  
+    margin: 10px 0;
 }
 
 .copyright-footer {
@@ -43,4 +44,5 @@
 .social-medias-footer {
     display: flex;
     gap: 10px;
+    margin-top: 5px;
 }
