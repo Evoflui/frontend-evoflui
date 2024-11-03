@@ -1,4 +1,4 @@
-.planos-section {
+.planos-payment-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,27 +9,27 @@
     background-repeat: no-repeat;
 }
 
-.title-section {
+.payment-title-section {
     margin: 5px 0;
     font-size: 3.5rem;
     color: #235AAD;
 }
 
-.subtitle-section {
+.payment-subtitle-section {
     margin: 0;
     font-size: 1.90rem;
     color: #414141;
     font-weight: 500;
 }
 
-.planos-container {
+.planos-payment-container {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
 
-.plano-month {
+.plano-payment-month {
     background-color: #D8D8D8;
     border-radius: 12px;
     width: 342px;
@@ -39,7 +39,7 @@
     margin: 10px 0;
 }
 
-.plano-month-name {
+.plano-payment-month-name {
     color: #414141;
     font-size: 36px;
     margin: 5px 0;
@@ -47,20 +47,20 @@
     justify-content: center;
 }
 
-.plano-month-benefit {
+.plano-payment-month-benefit {
     display: flex;
     align-items: center;
     text-align: center;
     margin: 5px 0;
 }
 
-.month-benefit-desc {
+.payment-month-benefit-desc {
     margin: 0px 0 0 5px;
     font-weight: 500;
     color: #414141;
 }
 
-.plano-month-price {
+.plano-payment-month-price {
     font-size: 2.5rem;
     color: #414141;
     display: flex;
@@ -69,7 +69,7 @@
     padding: 0;
 }
 
-.plano-month-type {
+.plano-payment-month-type {
     color: #414141;
     font-size: 0.75rem;
     border: 1px solid #414141;
@@ -84,7 +84,7 @@
     margin-left: 35%;
 }
 
-.plano-month-button {
+.plano-payment-month-button {
     font-weight: 700;
     background-color: #009CDE;
     font-size: 1.25rem;
@@ -97,6 +97,7 @@
     margin-left: 18%;
     padding: 5px 10px;
     text-decoration: none;
+    margin-top: 15px;
 }
 
 .plano-year {
@@ -163,9 +164,10 @@
     align-items: center;  
     color: #414141;
     border-radius: 12px;
-    width: 200px;
+    width: 220px;
     margin-left: 18%;
     padding: 5px 10px;
     text-decoration: none;
+    margin-top: 15px;
 }
 

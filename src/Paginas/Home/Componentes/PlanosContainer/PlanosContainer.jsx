@@ -13,61 +13,61 @@ import { Link } from 'react-router-dom';
 function PlanosContainer(){
     return(
         <div>
-            <main className="planos-section">
+            <main className="planos-payment-section">
 
-                <h1 className="title-section">Se torne um apoiador!</h1>
-                <p className="subtitle-section">Apoie a nossa causa e nos ajude a continuar mudando vidas.</p>
+                <h1 className="payment-title-section">Se torne um apoiador!</h1>
+                <p className="payment-subtitle-section">Apoie a nossa causa e nos ajude a continuar mudando vidas.</p>
 
-                <article className='planos-container'>
+                <article className='planos-payment-container'>
 
 
-                    <section className='plano-month'>
-                        <h1 className='plano-month-name'>FluiPlus</h1>
+                    <section className='plano-payment-month'>
+                        <h1 className='plano-payment-month-name'>FluiPlus</h1>
                     
-                        <div className='plano-month-benefit'>
+                        <div className='plano-payment-month-benefit'>
                             <img src={VerifiedIcon} alt="ícone de verificação" className='benefit-img'/>
-                            <p className='month-benefit-desc'>Livre de anúncios.</p>
+                            <p className='payment-month-benefit-desc'>Livre de anúncios.</p>
                         </div>
 
-                        <div className='plano-month-benefit'>
+                        <div className='plano-payment-month-benefit'>
                             <img src={HeartIcon} alt="ícone de coração" className='benefit-img'/>
-                            <p className='month-benefit-desc'>Vidas ilimitadas.</p>
+                            <p className='payment-month-benefit-desc'>Vidas ilimitadas.</p>
                         </div>
 
-                        <div className='plano-month-benefit'>
+                        <div className='plano-payment-month-benefit'>
                             <img src={LibraryIcon} alt="ícone de uma biblioteca" className='benefit-img'/>
-                            <p className='month-benefit-desc'>Acesso antecipado a conteúdos.</p>
+                            <p className='payment-month-benefit-desc'>Acesso antecipado a conteúdos.</p>
                         </div>
 
 
-                        <h2 className='plano-month-price'>R$11,99</h2>
-                        <p className='plano-month-type'>Plano mensal</p>
-                        <Link to='./pagamento' className='plano-month-button'>Assine Agora</Link>
+                        <h2 className='plano-payment-month-price'>R$11,99</h2>
+                        <p className='plano-payment-month-type'>Plano mensal</p>
+                        <Link to='./pagamento' className='plano-payment-month-button'>Assine Agora</Link>
                     </section>
 
 
-                    <section className='plano-month'>
-                        <h1 className='plano-month-name'>FluiPro</h1>
+                    <section className='plano-payment-month'>
+                        <h1 className='plano-payment-month-name'>FluiPro</h1>
                     
-                        <div className='plano-month-benefit'>
+                        <div className='plano-payment-month-benefit'>
                             <img src={ReturnIcon} alt="ícone de retornar" className='benefit-img'/>
-                            <p className='month-benefit-desc'>Todos os benefícios anteriores.</p>
+                            <p className='payment-month-benefit-desc'>Todos os benefícios anteriores.</p>
                         </div>
 
-                        <div className='plano-month-benefit'>
+                        <div className='plano-payment-month-benefit'>
                             <img src={CertificationIcon} alt="ícone de um certificado" className='benefit-img'/>
-                            <p className='month-benefit-desc'>Certificados de conclusão.</p>
+                            <p className='payment-month-benefit-desc'>Certificados de conclusão.</p>
                         </div>
 
-                        <div className='plano-month-benefit'>
+                        <div className='plano-payment-month-benefit'>
                             <img src={CheckIcon} alt="ícone de verificação" className='benefit-img'/>
-                            <p className='month-benefit-desc'>Selo de verificação na plataforma.</p>
+                            <p className='payment-month-benefit-desc'>Selo de verificação na plataforma.</p>
                         </div>
 
 
-                        <h2 className='plano-month-price'>R$13,99</h2>
-                        <p className='plano-month-type'>Plano mensal</p>
-                        <Link to='./pagamento' className='plano-month-button'>Assine Agora</Link>
+                        <h2 className='plano-payment-month-price'>R$13,99</h2>
+                        <p className='plano-payment-month-type'>Plano mensal</p>
+                        <Link to='./pagamento' className='plano-payment-month-button'>Assine Agora</Link>
                     </section>
 
 
@@ -84,7 +84,7 @@ function PlanosContainer(){
                             <p className='year-benefit-desc'>Uso corporativo em onBoarding.</p>
                         </div>
 
-                        <div className='plano-month-benefit'>
+                        <div className='plano-year-benefit'>
                             <img src={AnalyticsIcon} alt="ícone de uma lupa verificando dados" className='benefit-img'/>
                             <p className='year-benefit-desc'>Acompanhamento em tempo real.</p>
                         </div>

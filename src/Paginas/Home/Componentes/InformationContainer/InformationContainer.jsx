@@ -4,7 +4,7 @@ import AutisticFriends from '../../../../assets/imagens/AutisticFriends.svg'
 function InformationContainer() {
     return (
         <div>
-            <section className="container">
+            <section className="information-container">
                 <img src={AutisticFriends} alt="Dois jovens autistas interagindo e sorrindo entre si"/>
                 <div className="info-container">
                     <h1 className='info-title'>Transtorno do Espectro Autista</h1>
