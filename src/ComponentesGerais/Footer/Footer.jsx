@@ -17,7 +17,7 @@ function Footer(){
                 </ul>
             </section>
 
-            <hr className='linha-horizontal'/>
+            <hr className='linha-horizontal-footer'/>
 
             <section className='footer-part-two'>
                 <p className='copyright-footer'>Evoflui © 2024. Todos os direitos reservados.</p>

@@ -89,7 +89,6 @@ function PlanosContainer(){
                             <p className='year-benefit-desc'>Acompanhamento em tempo real.</p>
                         </div>
 
-
                         <h2 className='plano-year-price'>Valor Negociável</h2>
                         <p className='plano-year-type'>Plano anual</p>
                         <Link to='./fale-conosco' className='plano-year-button'>Entre em Contato</Link>
