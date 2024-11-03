@@ -13,7 +13,7 @@ function FeaturesContainer() {
                         <img src={LampIcon} alt="ícone de uma lâmpada" />
                         <h1 className="title--features-info">Trilha de Desenvolvimento</h1>
                     </div>
-                    <p className="text-features-info">Oferecemos uma trilha de desenvolvimento social para pessoas autistas e, para os tutores, uma trilha focada na conscientização sobre a neurodivergência, com recursos práticos de apoio.</p>
+                    <p className="text-features-info">Oferecemos uma trilha de desenvolvimento social para pessoas autistas e, para os tutores, uma trilha focada na conscientização sobre a neurodivergência, com recursos de apoio.</p>
                 </section>
 
                 <section className="pink-content">

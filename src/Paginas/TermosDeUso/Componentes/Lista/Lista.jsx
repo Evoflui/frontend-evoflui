@@ -54,7 +54,7 @@ export function Lista() {
                     continuarão em vigor.</p> <br></br>
 
                 <p className='titulo'> 11. Contato</p>
-                <p className='textos-termos'>Se você tiver perguntas sobre estes Termos de Uso, por favor, entre em contato conosco pelo e-mail: evoflui@hotmail.com.</p> <br></br>
+                <p className='textos-termos'>Se você tiver perguntas sobre estes Termos de Uso, por favor, entre em contato conosco pelo e-mail: <b>evoflui@hotmail.com</b>.</p> <br></br>
 
             </div>
 
