@@ -1,5 +1,5 @@
 import './UserFeedbacks.css'
-import React, { useEffect } from 'react';
+import React from 'react';
 import Person1 from '../../../../assets/imagens/personFeedback1.svg';
 import Person2 from '../../../../assets/imagens/personFeedback2.svg'
 import Person3 from '../../../../assets/imagens/personFeedback3.svg'
@@ -78,7 +78,6 @@ function UserFeedbacks() {
                 <Swiper
                     slidesPerView={3}
                     pagination={{ clickable: true }}
-                    navigation
                     style={{
                         "--swiper-pagination-color": "#FFF",
                         "--swiper-navigation-color": "#FFF",
