@@ -211,7 +211,7 @@ input {
 
 .login-signup-container.sign-up-mode:before {
 transform: translate(100%, 0%);
-right: 62%;
+right: 67%;
 }
 
 .login-signup-container.sign-up-mode .left-login-panel .login-signup-image,
