@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from "./Paginas/Home/Home";
+import Inicio from "./Paginas/Inicio/Inicio";
 import SobreNos from './Paginas/SobreNos/SobreNos';
 import FaleConosco from './Paginas/FaleConosco/FaleConosco'
 import TermosDeUso from './Paginas/TermosDeUso/TermosDeUso';
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} /> 
+        <Route path="/" element={<Inicio />} /> 
         <Route path="/sobre-nos" element={<SobreNos />} />
         <Route path="/fale-conosco" element={<FaleConosco />} />
         <Route path="/termos-de-uso" element={<TermosDeUso />} />
