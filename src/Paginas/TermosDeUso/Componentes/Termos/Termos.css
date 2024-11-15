@@ -5,19 +5,24 @@
 }
 
 
-.container{
+.container {
     max-width: 100%;
     background-color: #009CDE;
     height: 60px;
     margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
 }
 
 .texto-termos{
     font-size: 48px;
     color: #F1F1F1;
     font-weight: bold;
-    margin-top: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center; 
+    margin-top: 15px;
 }
 
 .container-atualizacao{

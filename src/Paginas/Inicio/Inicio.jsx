@@ -7,9 +7,9 @@ import InformationContainer from './Componentes/InformationContainer/Information
 import PlanosContainer from './Componentes/PlanosContainer/PlanosContainer';
 import BottomContainer from './Componentes/BottomContainer/BottomContainer';
 import Footer from '../../ComponentesGerais/Footer/Footer';
-import './Home.css'; 
+import './Inicio.css'; 
 
-function Home() {
+function Inicio() {
     const fadeInRefs = useRef([]);
 
     useEffect(() => {
@@ -56,4 +56,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Inicio;
