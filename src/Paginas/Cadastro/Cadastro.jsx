@@ -111,6 +111,13 @@ function Cadastro() {
                                 <input type="password" placeholder="Digite a senha novamente" required minLength={8} ref={confirmarSenhaRef} />
                             </div>
 
+                            <div className='account-checkbox-input-field'>
+
+                            <input type="checkbox" className='account-checkbox-input' required/>
+                            <label className='account-checkbox-label'>Eu concordo com os <b>Termos de Uso</b>.</label>
+                            </div>
+
+
                             <div className='account-type-input-field'>
                                 <div className='account-type-input-elements' >
                                     <input type="radio" name="opcaoConta" id="contaMembro" value="contaMembro" required />
