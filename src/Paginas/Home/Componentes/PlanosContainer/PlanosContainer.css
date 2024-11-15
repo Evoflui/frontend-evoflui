@@ -37,7 +37,8 @@
     flex-direction: column;
     padding: 10px;
     margin: 10px 0;
-    height: 390px;
+    height: 370px;
+    justify-content: center;
 }
 
 .plano-payment-month-name {
@@ -109,7 +110,8 @@
     flex-direction: column;
     padding: 10px;
     margin: 10px 0;
-    height: 390px;
+    height: 370px;
+    justify-content: center;
 }
 
 .plano-year-name {

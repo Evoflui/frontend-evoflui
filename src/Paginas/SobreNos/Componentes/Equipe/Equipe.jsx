@@ -40,7 +40,7 @@ function Equipe() {
                             <img src={Elton} alt="Foto membro" />
                             <p className='nome'> Elton Santos </p>
                             <p className='funcao'> Scrum Master & <br></br>
-                                Desenvolvedor Fulstack</p>
+                                Desenvolvedor Fullstack</p>
                         </div>
 
                         <div className='fotos'>
