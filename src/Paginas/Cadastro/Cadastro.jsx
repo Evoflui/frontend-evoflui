@@ -1,14 +1,20 @@
 import ImageLogin from '../../assets/imagens/imagemdelogin.svg';
 import ImageSignUp from '../../assets/imagens/imagemderegistro.svg';
 import './Cadastro.css';
-import { useRef, useEffect } from 'react';
+import { useRef, useState } from 'react';
 import UserIcon from '../../assets/icones/userIcon.svg'
+import { useNavigate } from 'react-router-dom';
 
 function Cadastro() {
     const containerRef = useRef(null);
     const nomeCompletoRef = useRef(null);
     const senhaRef = useRef(null);
     const confirmarSenhaRef = useRef(null);
+
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    // const [errorMessage, setErrorMessage] = useState(''); // mensagem de erro do forms
+    const navigate = useNavigate();
 
     const handleSignupClick = () => {
         containerRef.current.classList.add("sign-up-mode");
@@ -35,6 +41,33 @@ function Cadastro() {
         }
     }
 
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        const usuario = { email, senha };
+
+        try {
+            const response = await fetch('http://localhost:8080/home', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                credentials: 'include',
+                body: JSON.stringify(usuario)
+            });
+
+            // Retorno do Backend em Status
+
+            if(response.status === 200) {
+                navigate("/home");
+            } else if(response.status === 401) {
+                
+            }
+        } catch (error) {
+            console.error('Erro ao fazer login:', error);
+            
+        }
+    };
+
     return (
         <>
             <div className="login-signup-container" ref={containerRef}>
@@ -42,13 +75,21 @@ function Cadastro() {
                     <div className="login-signup-div">
 
 
-                        <form action="#" className="login-form login-signup-form">
+                        <form onSubmit={handleLogin} className="login-form login-signup-form">
                             <h2 className="login-title">Acesso</h2>
                             <div className="login-input-field">
-                                <input type="email" placeholder="E-mail" required />
+                                <input type="email" 
+                                placeholder="E-mail" 
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required />
                             </div>
                             <div className="login-input-field">
-                                <input type="password" placeholder="Senha" required />
+                                <input type="password" 
+                                placeholder="Senha"
+                                value={senha}
+                                onChange={(e) => setSenha(e.target.value)} 
+                                required />
                             </div>
                             <input type="submit" value="entrar" className="login-btn login-solid" />
                         </form>
