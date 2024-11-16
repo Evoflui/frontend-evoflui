@@ -6,6 +6,7 @@ import TermosDeUso from './Paginas/TermosDeUso/TermosDeUso';
 import PoliticaDePrivacidade from './Paginas/PoliticaDePrivacidade/PoliticaDePrivacidade'
 import Pagamento from './Paginas/Pagamento/Pagamento'
 import Cadastro from './Paginas/Cadastro/Cadastro';
+import Erro from './Paginas/TratamentoErro/404';
 import { Routes, Route } from 'react-router-dom'; 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
         <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
         <Route path="/pagamento" element={<Pagamento/>}/>
         <Route path="/comece-agora" element={<Cadastro/>}/>
+
+        <Route path="/erro-404" element={<Erro/>}/>
       </Routes>
     </div>
   );
