@@ -1,14 +1,14 @@
-import Header from '../../ComponentesGerais/Header/Header';
+import HeaderInterno from '../../ComponentesGerais/HeaderInterno/HeaderInterno';
 import Footer from '../../ComponentesGerais/Footer/Footer';
 import BoasVindas from './Componentes/BoasVindas/BoasVindas';
-import DashBoard from './Componentes/DashBoard/DashBoard';  // Manter a importação
+import DashBoard from './Componentes/DashBoard/DashBoard';  
 
 function Home(){
     return(
         <div>
-            <Header/>
+            <HeaderInterno/>
             <BoasVindas/>
-            <DashBoard/>  {/* Manter o componente */}
+            <DashBoard/>  
             <Footer/>
         </div>
     )

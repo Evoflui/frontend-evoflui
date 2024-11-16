@@ -1,6 +1,5 @@
 import React from "react";
 import './DashBoard.css';
-import Livros from '../../../../assets/imagens/livros.svg'
 import Forum from '../../../../assets/imagens/forum.svg'
 import Eventos from '../../../../assets/imagens/eventos.svg'
 
@@ -12,7 +11,7 @@ function DashBoard() {
                 <p className="desejo">O que você deseja fazer hoje?</p>
 
                 <div className="card-dashboard">
-                    <img src={Livros} alt="Pilha de livros com um fundo desfocado" />
+                    <img src={Forum} alt="Pilha de livros com um fundo desfocado" />
                     <div className="textos-card">
                         <p className="titulo-card-dashboard">Trilha de Desenvolvimento</p>
                         <p className="descricao-card-dashboard">
