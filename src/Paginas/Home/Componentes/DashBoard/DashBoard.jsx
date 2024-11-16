@@ -1,6 +1,6 @@
 import React from "react";
 import './DashBoard.css';
-import Livros from '../../../../assets/imagens/cardlivros.svg'
+import Livros from '../../../../assets/imagens/livros.svg'
 import Forum from '../../../../assets/imagens/forum.svg'
 import Eventos from '../../../../assets/imagens/eventos.svg'
 
