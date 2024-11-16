@@ -9,6 +9,7 @@ import Cadastro from './Paginas/Cadastro/Cadastro';
 import Erro from './Paginas/TratamentoErro/404';
 import { Routes, Route } from 'react-router-dom'; 
 import Home from './Paginas/Home/Home';
+import Eventos from './Paginas/Eventos/Eventos';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/comece-agora" element={<Cadastro/>}/>
         <Route path="/erro-404" element={<Erro/>}/>
         <Route path="/home" element={<Home/>} />
+        <Route path="/eventos" element={<Eventos/>} />
       </Routes>
     </div>
   );
