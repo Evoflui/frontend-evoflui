@@ -7,6 +7,7 @@ import PoliticaDePrivacidade from './Paginas/PoliticaDePrivacidade/PoliticaDePri
 import Pagamento from './Paginas/Pagamento/Pagamento'
 import Cadastro from './Paginas/Cadastro/Cadastro';
 import { Routes, Route } from 'react-router-dom'; 
+import Home from './Paginas/Home/Home';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
         <Route path="/pagamento" element={<Pagamento/>}/>
         <Route path="/comece-agora" element={<Cadastro/>}/>
+        <Route path="/home" element={<Home/>}/>
+
       </Routes>
     </div>
   );

@@ -4,6 +4,7 @@ import './Cadastro.css';
 import { useRef, useState } from 'react';
 import UserIcon from '../../assets/icones/userIcon.svg'
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Cadastro() {
     const containerRef = useRef(null);
@@ -93,8 +94,6 @@ function Cadastro() {
                             </div>
                             <input type="submit" value="entrar" className="login-btn login-solid" />
                         </form>
-
-
 
                         <form action="#" className="signup-form login-signup-form" onSubmit={handleSignupSubmit}>
                             <h2 className="login-title">Cadastro</h2>
