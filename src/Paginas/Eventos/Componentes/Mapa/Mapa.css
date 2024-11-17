@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 
 .container-evento-mapa-eventos {
   background-color: #D7D7DC;
@@ -5,8 +9,14 @@
   border-radius: 13px;
   border: 1px solid #A6A3A8;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 20px 20px;
+  padding: 20px;
   margin: 5px 0 15px 0;
+  transition: 0.9s ease-in-out;
+}
+
+.container-evento-mapa-eventos:hover {
+  padding: 30px;
+  margin: 15px 0 25px 0;
 }
 
 .container-titulo-mapa-eventos {
@@ -75,10 +85,13 @@
   color: #3c5ea7;
 }
 
-
-.mapa {
-  margin-bottom: 300px;
+.mapa-off-mg {
+  margin-bottom: 100px;
   transition: transform 0.5s ease-in-out;
+}
+
+.mapa-extra-mg {
+  margin-bottom: 300px;
 }
 
 .mapa:move {

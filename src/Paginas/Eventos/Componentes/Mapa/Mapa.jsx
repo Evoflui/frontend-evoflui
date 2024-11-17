@@ -13,6 +13,7 @@ class Mapa extends Component {
             this.levelMenu = React.createRef();
             this.levelOne = React.createRef();
             this.testeRef = React.createRef();
+            this.mapRef = React.createRef();
 
             this.state = {
                   selectedLevel: -1,
@@ -39,7 +40,7 @@ class Mapa extends Component {
 
       render() {
             return (
-                  <div className="mapa">
+                  <div className="mapa" ref={this.mapRef}>
                         <svg className="hidden">
                               <defs>
                                     <symbol id="icon-pin" viewBox="0 0 200 300">
@@ -396,7 +397,7 @@ class Mapa extends Component {
                                                             }
 
                                                             <a className="pin pin--1-1" data-category="1" data-space="1.01"
-                                                                  aria-label="Pin for Apple Heart" href='#pink-event'>
+                                                                  aria-label="Pin for Apple Heart" href='#events'>
                                                                   <span className="pin__icon">
                                                                         <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
                                                                         <svg className="icon icon--logo icon--heart"><use
@@ -404,7 +405,7 @@ class Mapa extends Component {
                                                                   </span>
 
                                                             </a>
-                                                            <a className="pin pin--1-3" data-category="2" data-space="1.03" href="#pink-event"
+                                                            <a className="pin pin--1-3" data-category="2" data-space="1.03" href="#events"
                                                                   aria-label="Pin for Folding Life">
                                                                   <span className="pin__icon">
                                                                         <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
@@ -412,7 +413,7 @@ class Mapa extends Component {
                                                                               xlinkHref="#icon-heart"></use></svg>
                                                                   </span>
                                                             </a>
-                                                            <a className="pin pin--1-4" data-category="3" data-space="1.04" href="#pink-event"
+                                                            <a className="pin pin--1-4" data-category="3" data-space="1.04" href="#events"
                                                                   aria-label="Pin for Dress me not">
                                                                   <span className="pin__icon">
                                                                         <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
@@ -421,7 +422,7 @@ class Mapa extends Component {
                                                                   </span>
                                                             </a>
 
-                                                            <a className="pin pin--1-6" data-category="4" data-space="1.06" href="#pink-event"
+                                                            <a className="pin pin--1-6" data-category="4" data-space="1.06" href="#events"
                                                                   aria-label="Pin for Seed of Life">
                                                                   <span className="pin__icon">
                                                                         <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
@@ -461,7 +462,7 @@ class Mapa extends Component {
                                     <h1 className='container-titulo-mapa-eventos'>Últimos eventos</h1>
 
 
-                                    <div className='container-evento-mapa-eventos' id="pink-event">
+                                    <div className='container-evento-mapa-eventos' id="events" >
                                           <h1 className='container-nome-evento'>Desenvolvendo Habilidades Sociais no TEA</h1>
                                           <p className='container-informacoes-evento'>
                                                 <span class="content__meta-item"><strong>Local:</strong> Estrada dos Pinheiros 180, Recanto Feliz - 04223070, São Paulo, SP </span>
@@ -523,6 +524,8 @@ class Mapa extends Component {
                   this.setState({ selectedLevel: level }, () => {
                         console.log('Estado atualizado:', this.state.selectedLevel);
                         this.testeRef.current.classList.remove('transparente');
+                        this.mapRef.current.classList.remove('mapa-extra-mg')
+                        this.mapRef.current.classList.add('mapa-off-mg')
                   });
             }
       }
@@ -531,6 +534,8 @@ class Mapa extends Component {
             this.setState({ selectedLevel: -1 }, () => {
                   console.log('Estado atualizado para -1:', this.state.selectedLevel);
                   this.testeRef.current.classList.add('transparente');
+                  this.mapRef.current.classList.add('mapa-extra-mg')
+                  this.mapRef.current.classList.remove('mapa-off-mg')
             });
       }
 
