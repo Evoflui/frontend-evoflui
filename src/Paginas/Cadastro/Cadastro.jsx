@@ -193,6 +193,13 @@ function Cadastro() {
                                 />
                             </div>
 
+                            <div className='account-checkbox-input-field'>
+
+                            <input type="checkbox" className='account-checkbox-input' required/>
+                            <label className='account-checkbox-label'>Eu concordo com os <b>Termos de Uso</b>.</label>
+                            </div>
+
+
                             <div className='account-type-input-field'>
                                 <div className='account-type-input-elements'>
                                     <input 
