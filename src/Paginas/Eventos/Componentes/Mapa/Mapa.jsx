@@ -40,7 +40,7 @@ class Mapa extends Component {
 
       render() {
             return (
-                  <div className="mapa" ref={this.mapRef}>
+                  <div className="mapa-extra-mg" ref={this.mapRef}>
                         <svg className="hidden">
                               <defs>
                                     <symbol id="icon-pin" viewBox="0 0 200 300">
