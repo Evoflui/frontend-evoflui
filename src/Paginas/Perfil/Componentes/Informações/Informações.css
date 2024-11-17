@@ -2,10 +2,6 @@
     background-color: #009CDE;
     width: 1371px;
     height: 257px;
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -13,6 +9,7 @@
     border-radius: 10px;
     margin-top: 40px;
     gap: 200px;
+    margin: 40px auto;
 }
 
 .nome-usuario-perfil{

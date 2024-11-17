@@ -6,7 +6,7 @@ function VerPerfil(){
         <>
 
         <div className="ver-perfil">
-            <p> Perfil </p>
+            <p className="texto-ver-perfil"> Perfil </p>
         </div>
 
         </>
