@@ -94,9 +94,7 @@ html {
   margin-bottom: 300px;
 }
 
-.mapa:move {
-  transform: translateY(100px);
-}
+
 
 .hidden {
   position: absolute;
