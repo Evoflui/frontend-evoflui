@@ -10,6 +10,7 @@ import Erro from './Paginas/TratamentoErro/404';
 import { Routes, Route } from 'react-router-dom'; 
 import Home from './Paginas/Home/Home';
 import Eventos from './Paginas/Eventos/Eventos';
+import Perfil from './Paginas/Perfil/Perfil';
 
 function App() {
   return (
@@ -22,8 +23,8 @@ function App() {
         <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
         <Route path="/pagamento" element={<Pagamento/>}/>
         <Route path="/comece-agora" element={<Cadastro/>}/>
-
         <Route path="/home" element={<Home />}/>
+        <Route path="/perfil" element={<Perfil/>}/>
 
         <Route path="/erro-404" element={<Erro/>}/>
         <Route path="/home" element={<Home/>} />
