@@ -22,7 +22,7 @@ function PlanosContainer(){
 
 
                     <section className='plano-payment-month'>
-                        <h1 className='plano-payment-month-name'>FluiPlus</h1>
+                        <h1 className='plano-payment-month-name'>FluiPro</h1>
                     
                         <div className='plano-payment-month-benefit'>
                             <img src={VerifiedIcon} alt="ícone de verificação" className='benefit-img'/>
@@ -47,7 +47,7 @@ function PlanosContainer(){
 
 
                     <section className='plano-payment-month'>
-                        <h1 className='plano-payment-month-name'>FluiPro</h1>
+                        <h1 className='plano-payment-month-name'>FluiPremium</h1>
                     
                         <div className='plano-payment-month-benefit'>
                             <img src={ReturnIcon} alt="ícone de retornar" className='benefit-img'/>

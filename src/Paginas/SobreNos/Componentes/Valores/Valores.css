@@ -20,6 +20,7 @@
 
 .container-valores .descricao {
     margin-top: 0;
+    text-align: justify;
 }
 
 .container-valores .descricao p {
@@ -42,6 +43,7 @@
 
 .container-valores .descricao-visao {
     margin-top: 0;
+    text-align: justify;
 }
 
 .container-valores .descricao-visao p {
@@ -50,7 +52,7 @@
     font-weight: 500;  
     margin-top: 20px; 
     margin-right: 20px;
-    text-align: right;
+    text-align: justify;
 }
 
 .container-valores {

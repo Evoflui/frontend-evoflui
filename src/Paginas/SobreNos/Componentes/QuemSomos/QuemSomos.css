@@ -19,8 +19,11 @@
     color: #FFFFFF; 
     font-size: 40px; 
     font-weight: 500; 
-    text-align: center;
     margin: 10px 0; 
+}
+
+.imagem-e-texto p {
+    text-align: justify; 
 }
 
 .container-quem-somos-azul {
@@ -42,6 +45,7 @@
     border-top-left-radius: 0;
     border-bottom-right-radius: 95px;
     border: 15px solid #009CDE;
+    border-top: none;
     background-color: #009CDE;
 }
 

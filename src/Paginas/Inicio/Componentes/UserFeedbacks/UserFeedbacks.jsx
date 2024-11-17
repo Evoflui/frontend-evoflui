@@ -1,10 +1,10 @@
-import './UserFeedbacks.css'
+import './UserFeedbacks.css';
 import React from 'react';
 import Person1 from '../../../../assets/imagens/personFeedback1.svg';
-import Person2 from '../../../../assets/imagens/personFeedback2.svg'
-import Person3 from '../../../../assets/imagens/personFeedback3.svg'
-import Person4 from '../../../../assets/imagens/personFeedback4.svg'
-import Person5 from '../../../../assets/imagens/personFeedback5.svg'
+import Person2 from '../../../../assets/imagens/personFeedback2.svg';
+import Person3 from '../../../../assets/imagens/personFeedback3.svg';
+import Person4 from '../../../../assets/imagens/personFeedback4.svg';
+import Person5 from '../../../../assets/imagens/personFeedback5.svg';
 import { register } from 'swiper/element/bundle';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -13,7 +13,6 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 register();
-
 
 function UserFeedbacks() {
     const data = [
@@ -34,14 +33,14 @@ function UserFeedbacks() {
         {
             id: '3',
             imagem: Person3,
-            descricao: 'Imagem de uma homem branco usando óculos',
+            descricao: 'Imagem de um homem branco usando óculos',
             nome: 'Dante Ferraz',
             depoimento: 'A plataforma foi fundamental para o desenvolvimento social e cognitivo do João, meu filho que possui TEA. As trilhas realmente fazem a diferença no nosso dia a dia.'
         },
         {
             id: '4',
             imagem: Person4,
-            descricao: 'Imagem de uma homem branco usando óculos',
+            descricao: 'Imagem de um homem branco usando óculos',
             nome: 'Lucas Andrade',
             depoimento: 'Os conteúdos oferecidos pela plataforma são enriquecedores e contribuem muito para nosso aprendizado! As trilhas são muito bem planejadas.'
         },
@@ -52,8 +51,9 @@ function UserFeedbacks() {
             nome: 'Isabela Duarte',
             depoimento: 'A jornada de aprendizado na plataforma realmente superou minhas expectativas de várias maneiras. A comunidade de tutores é incrivelmente acolhedora.'
         }
-    ]
+    ];
 
+    // Ajuste de altura dos containers
     var userContainers = document.querySelectorAll('.user-container');
     function setEqualHeight() {
         let maxHeight = 0;
@@ -70,7 +70,7 @@ function UserFeedbacks() {
     
     window.onload = setEqualHeight;
     window.onresize = setEqualHeight; 
-    
+
     return (
         <div>
             <h1 className='section-title'>Nossas últimas avaliações</h1>
@@ -78,6 +78,12 @@ function UserFeedbacks() {
                 <Swiper
                     slidesPerView={3}
                     pagination={{ clickable: true }}
+                    autoplay={{
+                        delay: 4000, 
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                    }}
+                    loop={true}
                     style={{
                         "--swiper-pagination-color": "#FFF",
                         "--swiper-navigation-color": "#FFF",
@@ -99,7 +105,7 @@ function UserFeedbacks() {
                 </Swiper>
             </main>
         </div>
-    )
+    );
 }
 
 export default UserFeedbacks;

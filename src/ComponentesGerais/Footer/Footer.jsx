@@ -5,10 +5,21 @@ import InstagramIcon from '../../assets/icones/instagramIcon.svg'
 import { Link } from 'react-router-dom'; 
 
 function Footer(){
+    const scrollToTop = (event) => {
+        event.preventDefault();
+        const headerSection = document.getElementById('header-section');
+        if (headerSection) {
+          headerSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      };
+
     return(
         <div class="footer">
             <section className='footer-part-one'>
-                <img src={LogoFooter} alt="Logomarca do Evoflui"/>
+                <a href="#header-section" onClick={scrollToTop}><img src={LogoFooter} alt="Logomarca do Evoflui"/></a>
                 <ul className='lista-footer'>
                     <li className="lista-item"><Link to="/sobre-nos" className='lista-item-link'>Sobre Nós</Link></li>
                     <li className="lista-item"><Link to="/fale-conosco" className='lista-item-link'>Fale Conosco</Link></li>

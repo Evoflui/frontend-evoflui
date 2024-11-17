@@ -4,6 +4,7 @@
     flex-direction: column;
     background-image: url('../../../../assets/imagens/bottomContainerBackground.svg');
 }
+
 .image-bottom-container {
 margin-bottom: 10px;
 }
@@ -30,6 +31,7 @@ margin-bottom: 10px;
 }
 
 .bottom-signup-button {
+    border: none;
     color: #1E388F;
     background-color: #FFDE00;
     border-radius: 10px;

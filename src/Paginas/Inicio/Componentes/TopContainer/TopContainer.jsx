@@ -1,8 +1,15 @@
 import React from 'react';
 import './TopContainer.css'
 import VetorImagem from '../../../../assets/imagens/vetorAutismo.svg';
+import { useNavigate } from 'react-router-dom';
 
 function TopContainer() {
+    // const navigate = useNavigate();
+
+    // const loginClick = () => {
+    //     navigate('/comece-agora');
+    // }
+
     return (
         <div>
             <section className="top-container">
@@ -13,8 +20,8 @@ function TopContainer() {
                         oportunidades. Junte-se a nós e descubra como evoluir e fluir com confiança
                         no seu próprio tempo.</p>
                         <div className="container-buttons">
-                            <a href="#" className="signup-button">Comece agora</a>
-                            <a href="#" className="signin-button">Já tenho conta</a>
+                            <a href='comece-agora' className="signup-button">Comece agora</a>
+                            <a href='comece-agora' className="signin-button">Já tenho conta</a>
                         </div>
                 </main>
                 <img src={VetorImagem} alt="Uma ilustração de uma moça brincando de quebra cabeça com um garoto"></img>

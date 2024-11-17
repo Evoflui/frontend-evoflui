@@ -31,7 +31,8 @@ function QuemSomos() {
                     buscamos proporcionar uma experiência que não só informa, mas que também
                     empodera. Nossa plataforma oferece conteúdos, ferramentas e uma estrutura de
                     suporte pensada para facilitar o crescimento em todas as etapas do processo de
-                    aprendizado.</p>
+                    aprendizado.
+                </p>
             </div>
         </>
     );

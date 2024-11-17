@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './Cadastro.css';
 import ImageLogin from '../../assets/imagens/imagemdelogin.svg';
 import ImageSignUp from '../../assets/imagens/imagemderegistro.svg';
-import UserIcon from '../../assets/icones/userIcon.svg';
+import UserTutorIcon from '../../assets/icones/userIcon.svg';
+import UserMembroIcon from '../../assets/icones/puzzleUserIcon.svg';
 
 function Cadastro() {
     //Cadastro
@@ -47,7 +48,7 @@ function Cadastro() {
             return;
         }
 
-        const nomeTipo = tipoUsuarioCadastro === '1' ? 'MEMBRO' : 'TUTOR';
+        const nomeTipo = tipoUsuarioCadastro === 1 ? 'MEMBRO' : 'TUTOR';
 
         const usuarioCadastrar = {
             nome: nomeCadastro,
@@ -108,7 +109,7 @@ function Cadastro() {
             if(response.status === 400) {
                 setErrorMessageLogin('Campos vazios são inválidos!');
             } else if(response.status === 200) {
-                navigate('/termos');
+                navigate('/home');
             } else if(response.status === 403) {
                 setErrorMessageLogin('Senha incorreta! Esqueceu a senha?');
             } else if(response.status === 401) {
@@ -203,7 +204,7 @@ function Cadastro() {
                                         onChange={() => setTipoUsuarioCadastro(1)}
                                         required 
                                     />
-                                    <img src={UserIcon} alt="Ícone de um usuário" className='account-type-icon' />
+                                    <img src={UserMembroIcon} alt="Ícone de um usuário" className='account-type-icon membro-icon' />
                                     <label className='account-type-label'>Conta Membro</label>
                                 </div>
 
@@ -217,7 +218,7 @@ function Cadastro() {
                                         onChange={() => setTipoUsuarioCadastro(2)}
                                         required 
                                     />
-                                    <img src={UserIcon} alt="Ícone de um usuário" className='account-type-icon' />
+                                    <img src={UserTutorIcon} alt="Ícone de um usuário" className='account-type-icon' />
                                     <label className='account-type-label'>Conta Tutor</label>
                                 </div>
                             </div>
