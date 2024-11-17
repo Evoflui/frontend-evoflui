@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import Draggable from 'react-draggable';
 import './Mapa.css';
 import surroundings from './assets/images/surroundings.svg';
@@ -8,20 +8,21 @@ import surroundings from './assets/images/surroundings.svg';
 class Mapa extends Component {
 
 
-
       constructor(props) {
             super(props);
             this.levelMenu = React.createRef();
             this.levelOne = React.createRef();
+            this.testeRef = React.createRef();
 
             this.state = {
                   selectedLevel: -1,
                   showContextMenu: false,
                   levelOnePins: [],
                   pin: {},
-                  isOpen: false
             }
+
       }
+
 
 
       componentDidMount() {
@@ -395,23 +396,15 @@ class Mapa extends Component {
                                                             }
 
                                                             <a className="pin pin--1-1" data-category="1" data-space="1.01"
-                                                                  aria-label="Pin for Apple Heart">
+                                                                  aria-label="Pin for Apple Heart" href='#pink-event'>
                                                                   <span className="pin__icon">
                                                                         <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
                                                                         <svg className="icon icon--logo icon--heart"><use
                                                                               xlinkHref="#icon-heart"></use></svg>
                                                                   </span>
-                                                                  
+
                                                             </a>
-                                                            <a className="pin pin--1-2" data-category="4" data-space="1.02" href="#"
-                                                                  aria-label="Pin for Crazy Banana">
-                                                                  <span className="pin__icon">
-                                                                        <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
-                                                                        <svg className="icon icon--logo icon--heart"><use
-                                                                              xlinkHref="#icon-heart"></use></svg>
-                                                                  </span>
-                                                            </a>
-                                                            <a className="pin pin--1-3" data-category="2" data-space="1.03" href="#"
+                                                            <a className="pin pin--1-3" data-category="2" data-space="1.03" href="#pink-event"
                                                                   aria-label="Pin for Folding Life">
                                                                   <span className="pin__icon">
                                                                         <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
@@ -419,7 +412,7 @@ class Mapa extends Component {
                                                                               xlinkHref="#icon-heart"></use></svg>
                                                                   </span>
                                                             </a>
-                                                            <a className="pin pin--1-4" data-category="3" data-space="1.04" href="#"
+                                                            <a className="pin pin--1-4" data-category="3" data-space="1.04" href="#pink-event"
                                                                   aria-label="Pin for Dress me not">
                                                                   <span className="pin__icon">
                                                                         <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
@@ -427,15 +420,8 @@ class Mapa extends Component {
                                                                               xlinkHref="#icon-heart"></use></svg>
                                                                   </span>
                                                             </a>
-                                                            <a className="pin pin--1-5" data-category="1" data-space="1.05" href="#"
-                                                                  aria-label="Pin for Meditation Garden">
-                                                                  <span className="pin__icon">
-                                                                        <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
-                                                                        <svg className="icon icon--logo icon--heart"><use
-                                                                              xlinkHref="#icon-heart"></use></svg>
-                                                                  </span>
-                                                            </a>
-                                                            <a className="pin pin--1-6" data-category="1" data-space="1.06" href="#"
+
+                                                            <a className="pin pin--1-6" data-category="4" data-space="1.06" href="#pink-event"
                                                                   aria-label="Pin for Seed of Life">
                                                                   <span className="pin__icon">
                                                                         <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
@@ -443,28 +429,7 @@ class Mapa extends Component {
                                                                               xlinkHref="#icon-heart"></use></svg>
                                                                   </span>
                                                             </a>
-                                                            <a className="pin pin--1-7" data-category="2" data-space="1.07" href="#"
-                                                                  aria-label="Pin for Raw Delight">
-                                                                  <span className="pin__icon">
-                                                                        <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
-                                                                        <svg className="icon icon--logo icon--heart"><use xlinkHref="#icon-heart"></use></svg>
-                                                                  </span>
-                                                            </a>
-                                                            <a className="pin pin--1-8" data-category="3" data-space="1.08" href="#"
-                                                                  aria-label="Pin for The Wizard">
-                                                                  <span className="pin__icon">
-                                                                        <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
-                                                                        <svg className="icon icon--logo icon--heart"><use
-                                                                              xlinkHref="#icon-heart"></use></svg>
-                                                                  </span>
-                                                            </a>
-                                                            <a className="pin pin--1-9" data-category="4" data-space="1.09"
-                                                                  aria-label="Pin for Smoothies &amp; Soul">
-                                                                  <span className="pin__icon">
-                                                                        <svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
-                                                                        <svg className="icon icon--logo icon--heart"><use xlinkHref="#icon-heart"></use></svg>
-                                                                  </span>
-                                                            </a>
+
                                                       </div>
                                                 </div>
 
@@ -484,8 +449,66 @@ class Mapa extends Component {
                                                       <use xlinkHref="#icon-stack"></use>
                                                 </svg>
                                           </button>
-
                                     </nav>
+                              </div>
+                        </div>
+
+                        <div
+                              className={`container-informacao-mapa-eventos ${this.state.selectedLevel === -1 ? 'transparente' : ''}`}
+                              ref={this.testeRef}
+                        >
+                              <div className='section-informacao-eventos'>
+                                    <h1 className='container-titulo-mapa-eventos'>Últimos eventos</h1>
+
+
+                                    <div className='container-evento-mapa-eventos' id="pink-event">
+                                          <h1 className='container-nome-evento'>Desenvolvendo Habilidades Sociais no TEA</h1>
+                                          <p className='container-informacoes-evento'>
+                                                <span class="content__meta-item"><strong>Local:</strong> Estrada dos Pinheiros 180, Recanto Feliz - 04223070, São Paulo, SP </span>
+                                                <br></br>
+                                                <span class="content__meta-item"><strong>Dia:</strong> 12/01/2025 </span>
+                                                <span class="content__meta-item"><strong>Horário:</strong> 08:30 - 12:30 </span>
+                                                <span class="content__meta-item"><strong>Forma de evento:</strong> Gratuito </span>
+                                          </p>
+                                          <p className='container-desc-evento'>Este evento explora recursos e práticas para apoiar o desenvolvimento de habilidades sociais em pessoas com TEA. Aprenda com especialistas e participe de workshops interativos.</p>
+                                    </div>
+
+                                    <div className='container-evento-mapa-eventos'>
+                                          <h1 className='container-nome-evento titulo-cor-verde'>Sensibilidade Sensorial de pessoas com TEA</h1>
+                                          <p className='container-informacoes-evento'>
+                                                <span class="content__meta-item"><strong>Local:</strong> Rua Bela Vista 50, Morumbi - 04445080, São Paulo, SP </span>
+                                                <br></br>
+                                                <span class="content__meta-item"><strong>Dia:</strong> 17/01/2025 </span>
+                                                <span class="content__meta-item"><strong>Horário:</strong> 16:00 - 20:00 </span>
+                                                <span class="content__meta-item"><strong>Forma de evento:</strong> Gratuito </span>
+                                          </p>
+                                          <p className='container-desc-evento'>Uma imersão no universo sensorial das pessoas com TEA, onde vamos explorar como estímulos do cotidiano são percebidos de maneira única. A palestra vai ajudar a entender os desafios sensoriais e oferecer estratégias para criar ambientes mais confortáveis e acolhedores.</p>
+                                    </div>
+
+                                    <div className='container-evento-mapa-eventos'>
+                                          <h1 className='container-nome-evento titulo-cor-azul'>Comunicação no Transtorno do Espectro Autista</h1>
+                                          <p className='container-informacoes-evento'>
+                                                <span class="content__meta-item"><strong>Local:</strong> Avenida das Américas 900, Zona Sul - 04367020, São Paulo, SP </span>
+                                                <br></br>
+                                                <span class="content__meta-item"><strong>Dia:</strong> 20/01/2025 </span>
+                                                <span class="content__meta-item"><strong>Horário:</strong> 11:00 - 13:00 </span>
+                                                <span class="content__meta-item"><strong>Forma de evento:</strong> Pago (R$30,00 - No local)</span>
+                                          </p>
+                                          <p className='container-desc-evento'>Vamos explorar como a comunicação e a linguagem se desenvolvem de maneira única em pessoas com TEA. A palestra vai abordar as diversas formas de expressão, desde as mais verbais até as alternativas, e como podemos facilitar a interação.</p>
+                                    </div>
+
+                                    <div className='container-evento-mapa-eventos'>
+                                          <h1 className='container-nome-evento titulo-cor-roxa'>Quebrando Mitos e Estigmas do autismo</h1>
+                                          <p className='container-informacoes-evento'>
+                                                <span class="content__meta-item"><strong>Local:</strong> Rua dos Laranjais 300, Vila Flor - 04114090, São Paulo, SP </span>
+                                                <br></br>
+                                                <span class="content__meta-item"><strong>Dia:</strong> 29/12/2024 </span>
+                                                <span class="content__meta-item"><strong>Horário:</strong> 10:00 - 14:00 </span>
+                                                <span class="content__meta-item"><strong>Forma de evento:</strong> Gratuito </span>
+                                          </p>
+                                          <p className='container-desc-evento'>Uma conversa aberta e esclarecedora para desfazer ideias erradas e promover uma compreensão verdadeira sobre o autismo. Será abordado fatos, desmistificar crenças antigas e mostrar como a informação é a chave para uma sociedade mais empática e inclusiva.</p>
+                                    </div>
+
                               </div>
                         </div>
                   </div>
@@ -493,18 +516,25 @@ class Mapa extends Component {
       }
 
       handleLevelClick(level, e) {
+            console.log('Antes do clique:', this.state.selectedLevel);
             if (this.state.selectedLevel === level) {
                   console.log(e.nativeEvent.offsetX);
             } else {
-                  this.setState({ selectedLevel: level });
+                  this.setState({ selectedLevel: level }, () => {
+                        console.log('Estado atualizado:', this.state.selectedLevel);
+                        this.testeRef.current.classList.remove('transparente');
+                  });
             }
       }
 
-
-
       handleShowAllLevelsClick() {
-            this.setState({ selectedLevel: -1 });
+            this.setState({ selectedLevel: -1 }, () => {
+                  console.log('Estado atualizado para -1:', this.state.selectedLevel);
+                  this.testeRef.current.classList.add('transparente');
+            });
       }
+
+
 
       handleLevelContextMenu(e) {
             e.preventDefault();
@@ -557,5 +587,4 @@ class Mapa extends Component {
             return `${percentage}vh`;
       }
 }
-
 export default Mapa;
