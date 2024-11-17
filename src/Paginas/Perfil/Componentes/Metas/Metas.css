@@ -1,0 +1,127 @@
+.container-metas {
+    background-color: #009CDE;
+    width: 1371px;
+    height: 369px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    margin-top: 40px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.titulo-metas {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.metas-lista {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 20px; 
+    font-weight: 500; 
+    color: #ffffff; 
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px; 
+    user-select: none;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 25px; 
+    width: 25px;  
+    background-color: transparent; 
+    border: 2px solid white; 
+    border-radius: 50%; 
+    transition: border-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px; 
+    color: white; 
+}
+
+.checkbox-container input:checked + .checkmark {
+    border-color: #8D23DE; 
+    background-color: #8D23DE; 
+}
+
+.checkbox-container input:checked + .checkmark:after {
+    content: "✓"; 
+    display: block;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 10px; 
+}
+
+.escrever-meta {
+    border-radius: 50px;
+    border: none;
+    width: 337px;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    font-size: 15px;
+    color: #263238;
+}
+
+.escrever-meta::placeholder {
+    font-size: 15px;
+    color: #263238;
+}
+
+.submit-btn {
+    background-color: #8D23DE; 
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.submit-btn:hover {
+    background-color: #7b1ba3; 
+}
+
+.check-icon {
+    font-size: 20px; 
+}
