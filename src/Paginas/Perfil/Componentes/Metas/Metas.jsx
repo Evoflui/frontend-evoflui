@@ -2,16 +2,36 @@ import React, { useState } from "react";
 import './Metas.css';
 
 function Metas() {
-    
+
     const [metas, setMetas] = useState([]);
-    // Estado para armazenar o valor do input
+
     const [novaMeta, setNovaMeta] = useState("");
 
-  
+
     const adicionarMeta = () => {
         if (novaMeta.trim() !== "") {
-            setMetas([...metas, novaMeta]);
+            setMetas([...metas, { texto: novaMeta, feita: false }]);
             setNovaMeta(""); 
+        }
+    };
+
+ 
+    const alternarMetaFeita = (index) => {
+        const novasMetas = [...metas];
+        novasMetas[index].feita = !novasMetas[index].feita;
+        setMetas(novasMetas);
+    };
+
+
+    const excluirMetasFeitas = () => {
+        const metasRestantes = metas.filter(meta => !meta.feita);
+        setMetas(metasRestantes);
+    };
+
+  
+    const handleKeyPress = (e) => {
+        if (e.key === "Enter") {
+            adicionarMeta(); 
         }
     };
 
@@ -20,11 +40,15 @@ function Metas() {
             <p className="titulo-metas">Metas Pessoais</p>
 
             <div className="metas-lista">
-                {/* Renderiza as metas com checkbox */}
+                
                 {metas.map((meta, index) => (
                     <label key={index} className="checkbox-container">
-                        {meta}
-                        <input type="checkbox" />
+                        <input 
+                            type="checkbox" 
+                            checked={meta.feita} 
+                            onChange={() => alternarMetaFeita(index)} 
+                        />
+                        {meta.texto}
                         <span className="checkmark"></span>
                     </label>
                 ))}
@@ -33,20 +57,23 @@ function Metas() {
             <div className="container-input">
                 <input
                     type="text"
-                    id="texto"
                     className="escrever-meta"
                     placeholder="Escreva aqui sua nova meta..."
                     value={novaMeta}
                     onChange={(e) => setNovaMeta(e.target.value)} 
+                    onKeyDown={handleKeyPress} 
                 />
-                <button 
-                    onClick={adicionarMeta} 
-                    className="submit-btn">
+                <button onClick={adicionarMeta} className="submit-btn">
                     <span className="check-icon">✔</span>
                 </button>
             </div>
+
+            
+            <button onClick={excluirMetasFeitas} className="excluir-btn">
+                Excluir metas concluídas
+            </button>
         </div>
-    )
+    );
 }
 
 export default Metas;
