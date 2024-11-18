@@ -7,6 +7,11 @@
     margin-top: 40px;
     margin: 40px auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden; 
+    position: relative; /* Para permitir que o input seja posicionado de forma absoluta dentro do container */
 }
 
 .titulo-metas {
@@ -21,13 +26,15 @@
 }
 
 .metas-lista {
-    width: 100%;
-    max-width: 500px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     gap: 15px;
-    align-items: center;
-    margin-top: 20px; 
+    align-items: flex-start; 
+    margin-top: 20px;
+    padding-bottom: 10px; 
+    overflow: hidden; 
+    max-height: 250px; 
+    overflow-y: auto; 
 }
 
 .checkbox-container {
@@ -42,6 +49,7 @@
     user-select: none;
     margin-left: 20px;
     margin-top: 5px;
+    width: 100%;
 }
 
 .checkbox-container input {
@@ -79,10 +87,13 @@
 
 .container-input {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    gap: 10px; 
-    margin-top: 10px; 
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;  /* Faz com que o input fique fixo na parte inferior */
+    bottom: 20px;  /* Distância da parte inferior do container */
+    left: 50%;
+    transform: translateX(-50%);  /* Centraliza o input horizontalmente */
 }
 
 .escrever-meta {
@@ -124,4 +135,30 @@
 
 .check-icon {
     font-size: 20px; 
+}
+
+
+.metas-lista {
+    max-height: 250px;
+    overflow-y: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: #8D23DE #d6d6d6; 
+}
+
+
+.metas-lista::-webkit-scrollbar {
+    width: 20px; 
+    border-radius: 8px; 
+}
+
+
+.metas-lista::-webkit-scrollbar-track {
+    background-color: #009CDE;
+    border-radius: 8px;
+}
+
+
+.metas-lista::-webkit-scrollbar-thumb {
+    background-color: #8D23DE;
+    border-radius: 8px; 
 }

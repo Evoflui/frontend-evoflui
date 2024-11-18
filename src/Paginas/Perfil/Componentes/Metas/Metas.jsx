@@ -2,43 +2,50 @@ import React, { useState } from "react";
 import './Metas.css';
 
 function Metas() {
-    const [meta, setMeta] = useState('');
+    
+    const [metas, setMetas] = useState([]);
+    // Estado para armazenar o valor do input
+    const [novaMeta, setNovaMeta] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Nova Meta:', meta); 
-        setMeta(''); 
+  
+    const adicionarMeta = () => {
+        if (novaMeta.trim() !== "") {
+            setMetas([...metas, novaMeta]);
+            setNovaMeta(""); 
+        }
     };
 
     return (
-        <>
-            <div className="container-metas">
-                <p className="titulo-metas">Metas Pessoais</p>
+        <div className="container-metas">
+            <p className="titulo-metas">Metas Pessoais</p>
 
-                <div className="metas-lista">
-                    <label className="checkbox-container">
-                        Chegar ao nível 5 da fase 1
+            <div className="metas-lista">
+                {/* Renderiza as metas com checkbox */}
+                {metas.map((meta, index) => (
+                    <label key={index} className="checkbox-container">
+                        {meta}
                         <input type="checkbox" />
                         <span className="checkmark"></span>
                     </label>
-                </div>
-
-                <form className="container-input" onSubmit={handleSubmit}>
-                    <label htmlFor="texto" className="escrever-meta"></label>
-                    <input
-                        type="text"
-                        id="texto"
-                        className="escrever-meta"
-                        placeholder="Escreva aqui sua nova meta..."
-                        value={meta}
-                        onChange={(e) => setMeta(e.target.value)} 
-                    />
-                    <button type="submit" className="submit-btn">
-                        <span className="check-icon">✔</span>
-                    </button>
-                </form>
+                ))}
             </div>
-        </>
+
+            <div className="container-input">
+                <input
+                    type="text"
+                    id="texto"
+                    className="escrever-meta"
+                    placeholder="Escreva aqui sua nova meta..."
+                    value={novaMeta}
+                    onChange={(e) => setNovaMeta(e.target.value)} 
+                />
+                <button 
+                    onClick={adicionarMeta} 
+                    className="submit-btn">
+                    <span className="check-icon">✔</span>
+                </button>
+            </div>
+        </div>
     )
 }
 
