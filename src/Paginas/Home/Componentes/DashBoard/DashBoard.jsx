@@ -4,11 +4,11 @@ import Forum from '../../../../assets/imagens/forum.svg';
 import Eventos from '../../../../assets/imagens/eventos.svg';
 import { useNavigate } from "react-router-dom";
 
-function DashBoard({ IdTrilha }) {
+function DashBoard() {
     const navigate = useNavigate();
 
     const handleRefTrilha = () => {
-        navigate(`/trilha/${IdTrilha}`);
+        navigate(`/trilha`);
     }
 
     const handleRefForum = () => {

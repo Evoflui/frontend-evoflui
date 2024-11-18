@@ -41,7 +41,7 @@ function Home(){
         <div>
             <HeaderInterno/>
             <BoasVindas/>
-            <DashBoard IdTrilha={tipoTrilha}/>  
+            <DashBoard/>  
             <Footer/>
         </div>
     )

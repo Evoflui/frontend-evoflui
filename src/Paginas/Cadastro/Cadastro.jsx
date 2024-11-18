@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Cadastro.css';
 import ImageLogin from '../../assets/imagens/imagemdelogin.svg';
@@ -54,10 +54,7 @@ function Cadastro() {
             nome: nomeCadastro,
             email: emailCadastro,
             senha: senhaCadastro,
-            tipoUsuario: {
-                "tipoId": tipoUsuarioCadastro,
-                "nomeTipo": nomeTipo
-            },
+            tipoUsuario: tipoUsuarioCadastro,
             progressoTrilha: 0,
             statusUsuario: "ATIVO"
         }
@@ -77,7 +74,7 @@ function Cadastro() {
                 if(response.status === 201) {
                     document.getElementById("login-signup-container").classList.remove("sign-up-mode");
                 } else if(response.status === 409) {
-                    setErrorMessage('Usuário com mesmo email já existente. Esqueceu a senha?');
+                    setErrorMessage('Usuário com mesmo email já existente.');
                 } else {
                     setErrorMessage('Erro desconhecido. Tente novamente.');
                 }
@@ -119,6 +116,20 @@ function Cadastro() {
             navigate('/erro-404');
         }
     };
+
+    useEffect(() => {
+        const checkSession = async () => {
+            const response = await fetch('http://localhost:8080/cadastro', {
+                method: 'GET',
+                credentials: 'include',
+            });
+            if (response.status === 201) {
+                navigate('/home');
+            }
+        };
+
+        checkSession();
+    }, [navigate]);
 
 
     return (
