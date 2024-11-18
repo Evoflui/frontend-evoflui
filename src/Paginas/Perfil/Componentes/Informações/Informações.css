@@ -1,0 +1,73 @@
+.container-informações-perfil {
+    background-color: #009CDE;
+    width: 1371px;
+    height: 257px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    margin-top: 40px;
+    gap: 200px;
+    margin: 40px auto;
+}
+
+.nome-usuario-perfil{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.email-perfil{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+    
+}
+
+.botao-vidas{
+    color: #ffffff ;
+    font-size: 20px;
+    background-color: #D92378;
+    font-weight: bold;
+    width: 265px;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.botao-editar-perfil{
+    background-color: #FFDE00;
+    font-size: 20px;
+    color: #575757;
+    width: 265px;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botoes-perfil {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.botao-vidas img, .botao-editar-perfil img {
+    margin-right: 10px; 
+}
