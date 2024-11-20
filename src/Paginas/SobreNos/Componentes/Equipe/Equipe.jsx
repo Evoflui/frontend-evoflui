@@ -24,7 +24,7 @@ function Equipe() {
 
                         <div className='fotos'>
                             <img src={Aleksandra} alt="Foto membro" />
-                            <p className='nome'> Aleksandra Marto</p>
+                            <p className='nome'> Aleksandra Leal</p>
                             <p className='funcao'> Desenvolvedora Back-End</p>
                         </div>
 
