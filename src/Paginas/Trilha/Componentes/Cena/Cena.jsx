@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-function Cena({ cena, onClick }) {
+function Cena({ cena, onClick, personagem }) {
   // Função que chama a função onClick ao clicar em qualquer lugar na tela
   const handleSceneClick = () => {
     onClick(null); // Avança para a próxima cena ou finaliza a história
@@ -13,8 +13,8 @@ function Cena({ cena, onClick }) {
   return (
     <div className="cena-container cena" onClick={handleSceneClick}>
       <div className="cena-texto">
-        <p>{cena.texto}</p>
-        {cena.personagem && <p><strong>{cena.personagem}</strong></p>}
+        <p>{cena.fraseCena}</p>
+        {personagem.nomePersonagem && <p><strong>{personagem.nomePersonagem}</strong></p>}
       </div>
     </div>
   );

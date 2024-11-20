@@ -91,7 +91,6 @@ function Cadastro() {
             email: emailLogin,
             senha: senhaLogin
         }
-
         
         try {
             const response = await fetch('http://localhost:8080/home', {
@@ -111,6 +110,8 @@ function Cadastro() {
                 setErrorMessageLogin('Senha incorreta! Esqueceu a senha?');
             } else if(response.status === 401) {
                 setErrorMessageLogin('Usuário não encontrado! Cadastra-se.');
+            } else {
+                setErrorMessageLogin('Erro desconhecido. Tente novamente.');
             }
         } catch (error) {
             navigate('/erro-404');

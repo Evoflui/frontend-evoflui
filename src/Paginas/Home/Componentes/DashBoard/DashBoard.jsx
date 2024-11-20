@@ -8,7 +8,7 @@ function DashBoard() {
     const navigate = useNavigate();
 
     const handleRefTrilha = () => {
-        navigate(`/trilha`);
+        navigate('/trilha');
     }
 
     const handleRefForum = () => {

@@ -10,11 +10,8 @@ import Erro from './Paginas/TratamentoErro/404';
 import { Routes, Route } from 'react-router-dom'; 
 import Home from './Paginas/Home/Home';
 import Eventos from './Paginas/Eventos/Eventos';
-<<<<<<< HEAD
 import Trilha from './Paginas/Trilha/Trilha';
-=======
 import Perfil from './Paginas/Perfil/Perfil';
->>>>>>> d66985a0a0078d1e99028b72b12269f45f02801b
 
 function App() {
   return (

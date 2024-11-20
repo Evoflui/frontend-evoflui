@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom';
 
 function Home(){
     const navigate = useNavigate();
-    const [tipoTrilha, setTipoTrilha] = useState('');
 
     useEffect(() => {
         const fetchData = async () => {
@@ -21,14 +20,11 @@ function Home(){
                     credentials: 'include',
                 });
     
-                if (response.ok) {
-                    const data = await response.json();
-                    setTipoTrilha(data.tipoUsuario.tipoId);
-                } else {
-                    if (response.status === 401) {
-                        navigate('/comece-agora');
-                    }
+                
+                if (response.status === 401) {
+                    navigate('/comece-agora');
                 }
+                
             } catch (error) {
                 navigate('/erro-404');
             }
