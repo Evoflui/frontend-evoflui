@@ -5,6 +5,7 @@ import ImageLogin from '../../assets/imagens/imagemdelogin.svg';
 import ImageSignUp from '../../assets/imagens/imagemderegistro.svg';
 import UserTutorIcon from '../../assets/icones/userIcon.svg';
 import UserMembroIcon from '../../assets/icones/puzzleUserIcon.svg';
+import { Link } from 'react-router-dom'; 
 
 function Cadastro() {
     //Cadastro
@@ -208,7 +209,7 @@ function Cadastro() {
                             <div className='account-checkbox-input-field'>
 
                             <input type="checkbox" className='account-checkbox-input' required/>
-                            <label className='account-checkbox-label'>Eu concordo com os <b>Termos de Uso</b>.</label>
+                            <label className='account-checkbox-label'>Eu concordo com os <Link to="/termos-de-uso" className='account-checkbox-link'><b>Termos de Uso</b>.</Link></label>
                             </div>
 
 

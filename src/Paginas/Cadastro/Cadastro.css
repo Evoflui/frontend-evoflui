@@ -110,6 +110,11 @@ input {
     color: #444;
 }
 
+.account-checkbox-link {
+    text-decoration: none;
+    color: #444;
+}
+
 .account-type-icon {
     padding: 0 2px;
 }
