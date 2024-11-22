@@ -71,3 +71,132 @@
 .botao-vidas img, .botao-editar-perfil img {
     margin-right: 10px; 
 }
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.modal-content {
+    background-color: #D92378;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 716px;
+    height: 720px;
+}
+
+
+.modal-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.modal-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.alterar-foto {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+
+.modal-form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.modal-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    height: 50px;
+}
+
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.save-button {
+    background-color: #F1F1F1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    color: #D92378;
+    font-weight: bold;
+    font-size: 30px;
+    width: 395px;
+    height: 56px;
+
+}
+
+.cancel-button {
+    background-color: #575757;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    width: 215px;
+    height: 56px;
+}
+
+.alterar-foto {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    background-color: transparent;
+    border: none; 
+    cursor: pointer; 
+    padding: 6px 12px; 
+    font-size: 16px; 
+    text-align: center;
+}
+.alterar-foto img {
+    width: 20px; 
+    height: 20px; 
+    margin-top: 10px;
+}
