@@ -12,6 +12,7 @@ import Home from './Paginas/Home/Home';
 import Eventos from './Paginas/Eventos/Eventos';
 import Trilha from './Paginas/Trilha/Trilha';
 import Perfil from './Paginas/Perfil/Perfil';
+import JogoDaMemoria from './Paginas/JogoDaMemoria/JogoDaMemoria';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/perfil" element={<Perfil/>}/>
         <Route path="/erro-404" element={<Erro/>}/>
         <Route path="/home" element={<Home/>} />
+        <Route path="/jogo-da-memoria" element={<JogoDaMemoria/>} />
 
         <Route path="/eventos" element={<Eventos/>} />
         <Route path="/trilha" element={<Trilha/>} />
