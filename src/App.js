@@ -13,6 +13,7 @@ import Eventos from './Paginas/Eventos/Eventos';
 import Trilha from './Paginas/Trilha/Trilha';
 import Perfil from './Paginas/Perfil/Perfil';
 import JogoDaMemoria from './Paginas/JogoDaMemoria/JogoDaMemoria';
+import Forum from './Paginas/Forum/Forum'
 
 function App() {
   return (
@@ -25,14 +26,13 @@ function App() {
         <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
         <Route path="/pagamento" element={<Pagamento/>}/>
         <Route path="/comece-agora" element={<Cadastro/>}/>
-
         <Route path="/perfil" element={<Perfil/>}/>
         <Route path="/erro-404" element={<Erro/>}/>
         <Route path="/home" element={<Home/>} />
         <Route path="/jogo-da-memoria" element={<JogoDaMemoria/>} />
-
         <Route path="/eventos" element={<Eventos/>} />
         <Route path="/trilha" element={<Trilha/>} />
+        <Route path="/forum" element={<Forum/>} />
       </Routes>
     </div>
   );

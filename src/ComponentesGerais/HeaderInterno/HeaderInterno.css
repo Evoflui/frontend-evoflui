@@ -49,3 +49,6 @@
     background-color: #D92378; 
 }
 
+.botao-de-saida-header {
+    cursor: pointer;
+}
