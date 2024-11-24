@@ -42,8 +42,9 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    cursor: pointer;
+    cursor: default;
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .botao-editar-perfil{
@@ -60,6 +61,7 @@
     text-align: center;
     justify-content: center;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .botoes-perfil {
@@ -78,25 +80,32 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; 
     background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+    overflow-y: auto; 
     display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 1000;
+    align-items: flex-start; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
 }
-
 
 .modal-content {
     background-color: #D92378;
     color: white;
     border-radius: 15px;
     padding: 20px;
-    width: 400px;
     text-align: center;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     width: 716px;
-    height: 720px;
+    margin: auto; 
+    max-width: 90%;
+}
+
+body.modal-open {
+    overflow: hidden; 
+    padding-right: 17px; 
 }
 
 
@@ -114,8 +123,8 @@
 }
 
 .modal-avatar img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height:200px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -151,8 +160,9 @@
 
 .modal-buttons {
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
 }
 
 .save-button {
@@ -167,6 +177,7 @@
     font-size: 30px;
     width: 395px;
     height: 56px;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -181,6 +192,7 @@
     font-weight: bold;
     width: 215px;
     height: 56px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .alterar-foto {
@@ -195,8 +207,10 @@
     font-size: 16px; 
     text-align: center;
 }
-.alterar-foto img {
+
+.alterar-foto .alterarFoto {
     width: 20px; 
     height: 20px; 
     margin-top: 10px;
 }
+

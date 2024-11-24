@@ -34,7 +34,8 @@ function Informações() {
         setFormData({ ...formData, currentPassword: "", newPassword: "" });
 
         setShowModal(false);
-    };
+    };  
+    
 
     return (
         <>
@@ -64,10 +65,9 @@ function Informações() {
             {showModal && (
                 <div className="modal-overlay">
                     <div className="modal-content">
-                        <h2 className="modal-title">Editar Perfil</h2>
                         <div className="modal-avatar">
-                            <img src={FotoPerfil} alt="Foto do perfil" />
-                            <button className="alterar-foto"><img src={alterarFoto} alt="icone de alterar foto de perfil" />Alterar foto de perfil</button>
+                            <img src={FotoPerfil} alt="Foto do perfil" className="foto-perfil-usuario-alterar"/>
+                            <button className="alterar-foto"><img src={alterarFoto} className="alterarFoto" alt="icone de alterar foto de perfil" />Alterar foto de perfil</button>
                         </div>
 
                         <form className="modal-form">
@@ -78,6 +78,7 @@ function Informações() {
                                     name="name"
                                     value={formData.name}
                                     onChange={handleInputChange}
+                                    required
                                 />
                             </label>
                             <label>
@@ -87,6 +88,7 @@ function Informações() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleInputChange}
+                                    required
                                 />
                             </label>
                             <label>
@@ -96,6 +98,7 @@ function Informações() {
                                     name="currentPassword"
                                     value={formData.currentPassword}
                                     onChange={handleInputChange}
+                                    required
                                 />
                             </label>
                             <label>
@@ -105,10 +108,11 @@ function Informações() {
                                     name="newPassword"
                                     value={formData.newPassword}
                                     onChange={handleInputChange}
+                                    required
                                 />
                             </label>
                         </form>
-
+                        
                         <div className="modal-buttons">
                             <button className="save-button" onClick={handleSave}>Salvar alterações</button>
                             <button className="cancel-button" onClick={() => setShowModal(false)}>Cancelar</button>

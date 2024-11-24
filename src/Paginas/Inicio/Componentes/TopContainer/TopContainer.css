@@ -55,13 +55,13 @@
 
 @media (max-width: 1600px) {
 
-    .top-container {
+    .top-info-home-container {
         display: flex;
         background-color: #8D23DE;
         padding: 2rem 8rem;
     }
 
-    .container-title {
+    .top-home-container-title {
         color: #FFF;
         font-size: 2.4rem;
         margin: 0;

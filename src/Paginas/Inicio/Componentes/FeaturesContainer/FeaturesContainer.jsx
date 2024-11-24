@@ -31,7 +31,7 @@ function FeaturesContainer() {
                         <img src={PeopleIcon} alt="ícone de confetti" />
                         <h1 className="title--features-info">Eventos Especiais</h1>
                     </div>
-                    <p className="text-features-info">Promovemos e divulgamos encontros especializados voltados para o autismo, visando o engajamento e a troca de experiências entre pessoas.</p>
+                    <p className="text-features-info">Promovemos e divulgamos encontros que são especializados e voltados para o autismo, visando o engajamento e a troca de experiências entre pessoas.</p>
                 </section>
 
             </main>

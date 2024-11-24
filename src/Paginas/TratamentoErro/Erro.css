@@ -5,7 +5,7 @@
     align-items: center;
     height: 100vh;
     background-color: #f8f8f8;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #333;
 }
 
@@ -17,6 +17,9 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     width: 90%;
+}
+.error-image {
+   width: 70%;
 }
 
 .error-code {
@@ -42,6 +45,8 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 .error-button:hover {
