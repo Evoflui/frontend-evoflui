@@ -1,30 +1,30 @@
-.top-container {
+.top-info-home-container {
     display: flex;
     background-color: #8D23DE;
     padding: 2rem 20rem;
 }
 
-.container-info{
+.top-home-container-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 40px;
 }
 
-.container-title {
+.top-home-container-title {
     color: #FFF;
     font-size: 3rem;
     margin: 0;
 }
 
-.container-text {
+.top-home-container-text {
     color: #FFF;
     font-size: 1.15rem;
     margin: 10px 0;
     text-align: justify;
 }
 
-.container-buttons {
+.top-home-container-buttons {
     display: flex;
     gap: 10px;
 }
