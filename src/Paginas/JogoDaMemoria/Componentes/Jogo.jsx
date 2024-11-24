@@ -131,8 +131,8 @@ const Jogo = () => {
   };
 
   return (
-    <main style={{ backgroundImage: `url(${BackgroundMemoria})` }}>
-      <header>
+    <main style={{ backgroundImage: `url(${BackgroundMemoria})` }} className='main-jogo-da-memoria'>
+      <header className='header-jogo-da-memoria'>
         <span>
           Tempo: <span className="timer">{timer}</span>
         </span>

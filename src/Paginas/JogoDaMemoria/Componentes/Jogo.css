@@ -1,4 +1,4 @@
-main {
+.main-jogo-da-memoria {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -10,7 +10,7 @@ main {
     padding: 20px 20px 50px;
 }
 
-header {
+.header-jogo-da-memoria {
     display: flex;
     align-items: center;
     justify-content: space-between;
