@@ -1,0 +1,57 @@
+
+.por-tras {
+    font-size: 60px;
+    color: #f1f1f1;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.conheca {
+    font-size: 30px;
+    color: #F1F1F1;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+
+.container-equipe {
+    background-color: #4B1E8F;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 80px; 
+    padding: 50px 0;
+    margin-top: 15px;
+}
+
+.container-divisao {
+    display: flex;
+    gap: 100px;
+}
+
+.fotos {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.nome {
+    font-size: 25px;
+    color: #F1F1F1;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.funcao {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0;
+}

@@ -1,0 +1,73 @@
+.container-progresso-trilha{
+margin: 0 15px;
+}
+
+.texto-progesso {
+    font-size: 40px;
+    font-weight: bold;
+    color: #8D23DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.progressso-porcentagem {
+    display: flex; 
+    align-items: center; 
+    margin-left: 15px; 
+}
+
+.porcentagem-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8D23DE;
+    width: 80px;  
+    height: 80px;  
+    color: white;
+    font-size: 20px;
+    border-radius: 50%; 
+    font-weight: bold;
+    margin-right: 15px; 
+    margin-left: 50px;
+}
+
+.barra-progresso {
+    width: 80%; 
+    height: 10px; 
+    background-color: #e0e0e0; 
+    border-radius: 5px; 
+}
+
+.progresso {
+    height: 100%; 
+    background-color: #8D23DE; 
+    border-radius: 5px; 
+}
+
+.porcentagem-final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8D23DE;
+    width: 80px;  
+    height: 80px;  
+    color: white;
+    font-size: 20px;
+    border-radius: 50%; 
+    font-weight: bold;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.menssagem-progresso{
+    font-size: 20px;
+    font-weight: 500;
+    color: #8D23DE;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}

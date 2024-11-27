@@ -1,0 +1,59 @@
+.container-quem-somos .sobre-nos-texto p {
+    color: #FFFFFF; 
+    font-size: 48px; 
+    font-weight: bold; 
+    text-align: center;
+    margin: 10px 0; 
+}
+
+.container-quem-somos {
+    background-color: #D92378; 
+    width: 100%; 
+    height: 7.875 rem; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.container-quem-somos-azul .quem-somos-texto p {
+    color: #FFFFFF; 
+    font-size: 40px; 
+    font-weight: 500; 
+    margin: 10px 0; 
+}
+
+.imagem-e-texto p {
+    text-align: justify; 
+}
+
+.container-quem-somos-azul {
+    background-color: #009CDE; 
+    width: 100%; 
+    height: 5.813 rem; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.imagem-e-texto {
+    display: flex; 
+    gap: 20px; 
+}
+
+.imagem-e-texto img {
+    height: auto; 
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 95px;
+    border: 15px solid #009CDE;
+    border-top: none;
+    background-color: #009CDE;
+}
+
+
+.imagem-e-texto p {
+    color: #0077A9;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px; 
+    margin-right: 60px;
+}

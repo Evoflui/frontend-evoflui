@@ -1,0 +1,21 @@
+
+.map-event-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #009CDE;
+    color: #FFF;
+    font-size: 50px;
+    padding: 5px 0;
+}
+
+.map-event-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #8D23DE;
+    padding: 5px 0;
+    color: #FFF;
+    width: 634px;
+    margin: auto;
+}

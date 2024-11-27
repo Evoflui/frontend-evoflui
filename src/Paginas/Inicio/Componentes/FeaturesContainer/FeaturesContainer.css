@@ -1,0 +1,52 @@
+.features-container {
+    background-image: url(../../../../assets/imagens/homebackground.svg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.purple-content {
+    background-color: #8D23DE;
+    max-width: 36rem;
+    border-radius: 0.938rem;
+    padding: 2rem 2.5rem;
+    margin: 23vh 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 1s;
+}
+
+.pink-content {
+    background-color: #D92378;
+    max-width: 36rem;
+    border-radius: 0.938rem;
+    padding: 2rem 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 1s;
+}
+
+.pink-content:hover, 
+.purple-content:hover {
+    transition: 1s;
+    transform: scale(1.04);
+}
+
+.features-top-info {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.title--features-info {
+    padding-left: 10px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.text-features-info {
+    color: #FFF;
+    font-size: 1.3rem;
+    margin-top: 5px;
+}
+

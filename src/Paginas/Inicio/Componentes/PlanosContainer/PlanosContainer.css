@@ -1,0 +1,189 @@
+.planos-payment-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem 0;
+    background-image: url('../../../../assets/imagens/plansBackground.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.payment-title-section {
+    margin: 5px 0;
+    font-size: 3.5rem;
+    color: #235AAD;
+}
+
+.payment-subtitle-section {
+    margin: 0;
+    font-size: 1.90rem;
+    color: #414141;
+    font-weight: 500;
+}
+
+.planos-payment-container {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.plano-payment-month {
+    background-color: #D8D8D8;
+    border-radius: 12px;
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 0;
+    height: 370px;
+    justify-content: center;
+    transition: 1s;
+}
+
+.plano-payment-month:hover {
+    transition: 1s;
+    transform: scale(1.04);
+}
+
+.plano-payment-month-name {
+    color: #414141;
+    font-size: 36px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.plano-payment-month-benefit {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.payment-month-benefit-desc {
+    margin: 0px 0 0 5px;
+    font-weight: 500;
+    color: #414141;
+}
+
+.plano-payment-month-price {
+    font-size: 2.5rem;
+    color: #414141;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.plano-payment-month-type {
+    color: #414141;
+    font-size: 0.75rem;
+    border: 1px solid #414141;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;      
+    align-items: center;          
+    margin-top: 5px;
+    width: 100px;
+    padding: 5px 2px;
+    font-weight: 500;
+    margin-left: 35%;
+}
+
+.plano-payment-month-button {
+    font-weight: 700;
+    background-color: #009CDE;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;      
+    align-items: center;  
+    color: #F1F1F1;
+    border-radius: 12px;
+    width: 200px;
+    margin-left: 18%;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.plano-year {
+    background-color: #009CDE;
+    border-radius: 12px;
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 0;
+    height: 370px;
+    justify-content: center;
+    transition: 1s;
+}
+
+.plano-year:hover {
+    transition: 1s;
+    transform: scale(1.04);
+}
+
+.plano-year-name {
+    color: #F1F1F1;
+    font-size: 36px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.plano-year-benefit {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.year-benefit-desc {
+    margin: 0px 0 0 5px;
+    font-weight: 500;
+    color: #F1F1F1;
+}
+
+.plano-year-price {
+    font-size: 2rem;
+    color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.plano-year-type {
+    color: #F1F1F1;
+    font-size: 0.75rem;
+    border: 1px solid #F1F1F1;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;      
+    align-items: center;          
+    margin-top: 5px;
+    width: 100px;
+    padding: 5px 2px;
+    font-weight: 500;
+    margin-left: 35%;
+}
+
+.plano-year-button {
+    font-weight: 700;
+    background-color: #F1F1F1;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;      
+    align-items: center;  
+    color: #414141;
+    border-radius: 12px;
+    width: 220px;
+    margin-left: 18%;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
