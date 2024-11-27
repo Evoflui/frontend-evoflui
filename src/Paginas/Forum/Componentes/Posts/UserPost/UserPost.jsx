@@ -45,7 +45,7 @@ function UserPost({ title, author, content, qntdComentarios, qntdCurtidas }) {
                                 alt="Ícone de curtidas"
                                 className="user-post-icon"
                             />
-                            {likes} {likes <= 1 ? "curtida" : "curtidas"}
+                            {likes} {likes == 1 ? "curtida" : "curtidas"}
                         </p>
                     </div>
                     <a href="#" className="user-post-see-more">Ver tudo</a>
