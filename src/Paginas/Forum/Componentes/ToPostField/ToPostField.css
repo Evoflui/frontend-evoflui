@@ -1,0 +1,61 @@
+.post-field-section {
+    background-image: url(../../../../assets/imagens/backgroundForum.svg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.post-field-container {
+    margin-top: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #8D23DE;
+    border-radius: 10px;
+    width: 1300px;
+    padding: 10px 15px;
+}
+
+.post-field-informations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.post-field-user-informations {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-field-user-name {
+    color: #FFF;
+    font-weight: 500;
+}
+
+.post-field-user-action {
+    color: #8D23DE;
+    background-color: #FFF;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.post-field-user-text {
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 10px;
+    margin-top: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    resize: none; 
+    font-family: 'Montserrat', sans-serif;
+    height: 120px;
+    
+    font-weight: 500;
+    background-color: #E4E4E4;
+}
+
+.post-field-user-text::placeholder {
+  color: #455A64;  
+}
