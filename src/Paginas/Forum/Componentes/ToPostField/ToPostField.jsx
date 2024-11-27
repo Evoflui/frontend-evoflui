@@ -12,9 +12,8 @@ function ToPostField() {
                     </div>
                     <a href="" className="post-field-user-action">Postar</a>
                 </div>
-                <textarea placeholder='Escreva aqui a sua mensagem...' className="post-field-user-text">
-
-                </textarea>
+                <textarea placeholder='Escreva o título da postagem...' className="post-field-user-title"></textarea>
+                <textarea placeholder='Escreva aqui a sua mensagem...' className="post-field-user-text"></textarea>
             </div>
         </div>
     )
