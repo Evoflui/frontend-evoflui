@@ -39,6 +39,10 @@
     text-decoration: none;
     border-radius: 10px;
     padding: 5px 15px;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 }
 .post-field-user-title {
     width: 100%; 
@@ -55,7 +59,6 @@
     background-color: #E4E4E4;
 }
 .post-field-user-text {
-    width: 100%; 
     box-sizing: border-box; 
     padding: 10px;
     margin-top: 10px; 
@@ -67,6 +70,7 @@
     font-size: 16px;
     font-weight: 500;
     background-color: #E4E4E4;
+    width: 100%;
 }
 
 .post-field-user-text::placeholder {
