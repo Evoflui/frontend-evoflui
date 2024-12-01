@@ -18,6 +18,9 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
+    word-wrap: break-word; 
+    max-width: 100%;
+    white-space: normal; 
     
 }
 
@@ -214,3 +217,10 @@ body.modal-open {
     margin-top: 10px;
 }
 
+.foto-de-perfil img, .foto-perfil-usuario-alterar {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 6px solid #ffffff; 
+}

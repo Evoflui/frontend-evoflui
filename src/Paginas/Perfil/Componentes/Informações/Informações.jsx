@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './Informações.css';
-import FotoPerfil from '../../../../assets/imagens/foto perfil.svg';
+import FotoPerfil from '../../../../assets/imagens/fotoDePerfil.jpg';
 import IconeCoracao from '../../../../assets/icones/iconecoracao.svg';
 import iconeLapis from '../../../../assets/icones/iconelapis.svg';
 import alterarFoto from '../../../../assets/icones/alterarfoto.svg';
@@ -20,9 +20,22 @@ function Informações() {
         newPassword: ""
     });
 
+    const [profilePicture, setProfilePicture] = useState(FotoPerfil); 
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
+    };
+
+    const handleFileChange = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setProfilePicture(reader.result); 
+            };
+            reader.readAsDataURL(file);
+        }
     };
 
     const handleSave = () => {
@@ -34,14 +47,17 @@ function Informações() {
         setFormData({ ...formData, currentPassword: "", newPassword: "" });
 
         setShowModal(false);
-    };  
-    
+    };
+
+    const handleChangePictureClick = () => {
+        document.getElementById("upload-photo").click(); 
+    };
 
     return (
         <>
             <div className="container-informações-perfil">
                 <div className="foto-de-perfil">
-                    <img src={FotoPerfil} alt="Foto de perfil do usuário" />
+                    <img src={profilePicture} alt="Foto de perfil do usuário" /> 
                 </div>
 
                 <div className="user-perfil">
@@ -66,8 +82,18 @@ function Informações() {
                 <div className="modal-overlay">
                     <div className="modal-content">
                         <div className="modal-avatar">
-                            <img src={FotoPerfil} alt="Foto do perfil" className="foto-perfil-usuario-alterar"/>
-                            <button className="alterar-foto"><img src={alterarFoto} className="alterarFoto" alt="icone de alterar foto de perfil" />Alterar foto de perfil</button>
+                            <img src={profilePicture} alt="Foto do perfil" className="foto-perfil-usuario-alterar" />
+                            <button className="alterar-foto" onClick={handleChangePictureClick}>
+                                <img src={alterarFoto} className="alterarFoto" alt="icone de alterar foto de perfil" />
+                                Alterar foto de perfil
+                            </button>
+                            <input
+                                type="file"
+                                accept="image/*"
+                                onChange={handleFileChange} 
+                                style={{ display: 'none' }}
+                                id="upload-photo"
+                            />
                         </div>
 
                         <form className="modal-form">
@@ -112,7 +138,7 @@ function Informações() {
                                 />
                             </label>
                         </form>
-                        
+
                         <div className="modal-buttons">
                             <button className="save-button" onClick={handleSave}>Salvar alterações</button>
                             <button className="cancel-button" onClick={() => setShowModal(false)}>Cancelar</button>
