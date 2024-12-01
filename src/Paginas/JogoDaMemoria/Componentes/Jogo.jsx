@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Jogo.css';
+import { useNavigate } from 'react-router-dom';  
 import BackgroundMemoria from '../../../assets/imagens/backgroud (1).png';
 import CardFrente from '../../../assets/imagens/card frente (1).png';
 import CardAmora from '../../../assets/imagens/amora card.png';
@@ -30,20 +31,15 @@ const characters = [
 ];
 
 const Jogo = () => {
+  const navigate = useNavigate();
+
   const [cards, setCards] = useState([]);
   const [firstCard, setFirstCard] = useState(null);
   const [secondCard, setSecondCard] = useState(null);
   const [disabledCards, setDisabledCards] = useState([]);
-  const [timer, setTimer] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
+  const [gameOver, setGameOver] = useState(false);  
 
   const startGame = () => {
-    
-    if (intervalId) {
-      clearInterval(intervalId);
-      setIntervalId(null);
-    }
-
     const shuffledCharacters = [...characters].sort(() => Math.random() - 0.5);
     const initializedCards = shuffledCharacters.map((character, index) => ({
       id: index,
@@ -55,31 +51,16 @@ const Jogo = () => {
     setFirstCard(null);
     setSecondCard(null);
     setDisabledCards([]);
-    setTimer(0);
-
-    // Iniciar o temporizador
-    const id = setInterval(() => {
-      setTimer((prevTimer) => prevTimer + 1);
-    }, 1000);
-    setIntervalId(id);
+    setGameOver(false);  
   };
 
   useEffect(() => {
     startGame();
-    return () => {
-   
-      if (intervalId) {
-        clearInterval(intervalId);
-      }
-    };
   }, []);
 
   const checkEndGame = () => {
     if (disabledCards.length === characters.length) {
-      clearInterval(intervalId); 
-      setIntervalId(null); 
-      alert(`Parabéns! Você concluiu o jogo em ${timer} segundos!`);
-      startGame(); 
+      setGameOver(true);  
     }
   };
 
@@ -102,7 +83,7 @@ const Jogo = () => {
           );
           setFirstCard(null);
           setSecondCard(null);
-        }, 1000); 
+        }, 1000);
       }
     }
   };
@@ -132,11 +113,8 @@ const Jogo = () => {
 
   return (
     <main style={{ backgroundImage: `url(${BackgroundMemoria})` }} className='main-jogo-da-memoria'>
-      <header className='header-jogo-da-memoria'>
-        <span>
-          Tempo: <span className="timer">{timer}</span>
-        </span>
-      </header>
+      <header className='header-jogo-da-memoria'></header>
+      <h1 className='titulo-jogo-memoria'> Jogo da Memória </h1>
       <div className="grid">
         {cards.map((card) => (
           <div
@@ -146,7 +124,6 @@ const Jogo = () => {
             }`}
             onClick={() => handleCardClick(card.id)}
           >
-            {/* Frente do card */}
             <div className="face front">
               {card.revealed ? (
                 <img src={characterImages[card.character]} alt={card.character} />
@@ -154,15 +131,33 @@ const Jogo = () => {
                 <img src={CardFrente} alt="Card Front" />
               )}
             </div>
-            {/* Verso do card */}
             <div className="face back">
               <img src={CardFrente} alt="Card Back" />
             </div>
           </div>
         ))}
       </div>
+
+   
+      {gameOver && (
+        <div className="mensagem-vitoria">
+          <h2>Parabéns! Você venceu!</h2>
+        </div>
+      )}
+
+      <div className="reiniciar-botao-container">
+        <button onClick={startGame} className="reiniciar-jogo">
+          Reiniciar Jogo
+        </button>
+      </div>
+      <div className="voltar-home-botao-container">
+        <button onClick={() => navigate('/')} className="voltar-home">
+          Voltar
+        </button>
+      </div>
     </main>
   );
 };
+
 
 export default Jogo;
