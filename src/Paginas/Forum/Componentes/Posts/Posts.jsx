@@ -11,6 +11,12 @@ function Posts({ posts }) {
                     content={post.content}
                     qntdComentarios={post.qntdComentarios}
                     qntdCurtidas={post.qntdCurtidas}
+                    userCommentText={post.userCommentText}
+                    userCommentName={post.userCommentName}
+                    userCommentText2={post.userCommentText2}
+                    userCommentName2={post.userCommentName2}
+                    userCommentText3={post.userCommentText3}
+                    userCommentName3={post.userCommentName3}
                 />
             ))}
         </div>
