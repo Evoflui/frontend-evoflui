@@ -32,7 +32,8 @@ function UserPost({ title, author, content, qntdComentarios, qntdCurtidas }) {
           input: "textarea",
           inputPlaceholder: "Escreva o motivo aqui da denúncia aqui...",
           inputAttributes: {
-            "aria-label": "Escreva o motivo aqui"
+            "aria-label": "Escreva o motivo aqui",
+            style: "resize: none; font-family: Montserrat, sans-serif"
           },
           showCancelButton: true,
           confirmButtonColor: "#009CDE",
