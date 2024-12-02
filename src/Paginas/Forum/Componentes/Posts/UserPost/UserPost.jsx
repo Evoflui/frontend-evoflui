@@ -2,6 +2,8 @@ import './UserPost.css';
 import chatIcon from '../../../../../assets/imagens/chatIcon.svg';
 import favoriteIcon from '../../../../../assets/imagens/favoriteIcon.svg';
 import favoriteIconFull from '../../../../../assets/imagens/favoriteIconFull.svg';
+import warnIcon from '../../../../../assets/icones/warnIcon.svg';
+import Swal from 'sweetalert2';
 import { useState, useEffect } from 'react';
 
 function UserPost({ title, author, content, qntdComentarios, qntdCurtidas }) {
@@ -21,6 +23,38 @@ function UserPost({ title, author, content, qntdComentarios, qntdCurtidas }) {
             setLikes(likes + 1);
         }
     };
+
+    const handleReport = async (e) => {
+        e.preventDefault();
+      
+        const { value: reason } = await Swal.fire({
+          title: "Denunciar postagem",
+          input: "textarea",
+          inputPlaceholder: "Escreva o motivo aqui da denúncia aqui...",
+          inputAttributes: {
+            "aria-label": "Escreva o motivo aqui"
+          },
+          showCancelButton: true,
+          confirmButtonColor: "#009CDE",
+          cancelButtonColor: "#575757",
+          confirmButtonText: "Confirmar Envio",
+          cancelButtonText: "Cancelar",
+          inputValidator: (value) => {
+            if (!value) {
+              return "Você precisa escrever o motivo da denúncia!";
+            }
+          }
+        });
+      
+        if (reason) {
+          Swal.fire({
+            title: "Enviado!",
+            text: "Sua denúncia foi enviada com sucesso. Obrigado por nos ajudar a manter a comunidade segura.",
+            icon: "success",
+          })
+        }
+      };
+      
 
     return (
         <div className="user-post-section">
@@ -48,7 +82,7 @@ function UserPost({ title, author, content, qntdComentarios, qntdCurtidas }) {
                             {likes} {likes == 1 ? "curtida" : "curtidas"}
                         </p>
                     </div>
-                    <a href="#" className="user-post-see-more">Ver tudo</a>
+                    <a onClick={handleReport} className="user-post-see-more"><img src={warnIcon} alt="ícone de denúncia" className='user-post-icon' />Denunciar</a>
                 </section>
             </main>
         </div>

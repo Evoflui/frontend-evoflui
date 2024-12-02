@@ -61,10 +61,13 @@
 }
 
 .user-post-see-more {
-    color: #575757;
-    background-color: #FFDE00;
+    color: #F1F1F1;
+    background-color: #575757;
     border-radius: 10px;
     font-weight: 700;
     text-decoration: none;
     padding: 5px 12px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
 }
