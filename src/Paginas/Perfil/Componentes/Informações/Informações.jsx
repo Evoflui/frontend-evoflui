@@ -4,9 +4,8 @@ import FotoPerfil from '../../../../assets/imagens/fotoDePerfil.jpg';
 import IconeCoracao from '../../../../assets/icones/iconecoracao.svg';
 import iconeLapis from '../../../../assets/icones/iconelapis.svg';
 import alterarFoto from '../../../../assets/icones/alterarfoto.svg';
-import ocultarSenha from '../../../../assets/icones/iconeocultarsenha.svg';
 
-function Informações() {
+function Informações({ onNameChange }) {
     const [showModal, setShowModal] = useState(false);
     const [userInfo, setUserInfo] = useState({
         name: "Gabriel Augusto",
@@ -20,7 +19,7 @@ function Informações() {
         newPassword: ""
     });
 
-    const [profilePicture, setProfilePicture] = useState(FotoPerfil); 
+    const [profilePicture, setProfilePicture] = useState(FotoPerfil);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -32,7 +31,7 @@ function Informações() {
         if (file) {
             const reader = new FileReader();
             reader.onloadend = () => {
-                setProfilePicture(reader.result); 
+                setProfilePicture(reader.result);
             };
             reader.readAsDataURL(file);
         }
@@ -40,24 +39,27 @@ function Informações() {
 
     const handleSave = () => {
         setUserInfo({
-            name: formData.name,
-            email: formData.email
+            name: formData.name || "Gabriel Augusto",
+            email: formData.email,
         });
 
-        setFormData({ ...formData, currentPassword: "", newPassword: "" });
+        if (onNameChange) {
+            onNameChange(formData.name || "Gabriel Augusto");
+        }
 
+        setFormData({ ...formData, currentPassword: "", newPassword: "" });
         setShowModal(false);
     };
 
     const handleChangePictureClick = () => {
-        document.getElementById("upload-photo").click(); 
+        document.getElementById("upload-photo").click();
     };
 
     return (
         <>
             <div className="container-informações-perfil">
                 <div className="foto-de-perfil">
-                    <img src={profilePicture} alt="Foto de perfil do usuário" /> 
+                    <img src={profilePicture} alt="Foto de perfil do usuário" />
                 </div>
 
                 <div className="user-perfil">
@@ -90,7 +92,7 @@ function Informações() {
                             <input
                                 type="file"
                                 accept="image/*"
-                                onChange={handleFileChange} 
+                                onChange={handleFileChange}
                                 style={{ display: 'none' }}
                                 id="upload-photo"
                             />
