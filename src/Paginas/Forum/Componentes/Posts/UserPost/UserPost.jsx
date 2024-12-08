@@ -106,47 +106,47 @@ function UserPost({ title, author, content, qntdComentarios, qntdCurtidas, userC
             </main>
             <main className="post-comment-section">
 
-            <CSSTransition
-    in={commentsVisible}
-    timeout={300} 
-    classNames="fade" 
-    unmountOnExit 
->
+                <CSSTransition
+                    in={commentsVisible}
+                    timeout={300}
+                    classNames="fade"
+                    unmountOnExit
+                >
 
-                        <section className="users-comments-section" >
-                            {userCommentText && userCommentName && (
-                                <div className="user-comment">
-                                    <p className="user-comment-text">{userCommentText}</p>
-                                    <p className="user-comment-name">por: <b>{userCommentName}</b></p>
-                                </div>
-                            )}
+                    <section className="users-comments-section" >
+                        {userCommentText && userCommentName && (
+                            <div className="user-comment">
+                                <p className="user-comment-text">{userCommentText}</p>
+                                <p className="user-comment-name">por: <b>{userCommentName}</b></p>
+                            </div>
+                        )}
 
-                            {userCommentText2 && userCommentName2 && (
-                                <div className="user-comment">
-                                    <p className="user-comment-text">{userCommentText2}</p>
-                                    <p className="user-comment-name">por: <b>{userCommentName2}</b></p>
-                                </div>
-                            )}
+                        {userCommentText2 && userCommentName2 && (
+                            <div className="user-comment">
+                                <p className="user-comment-text">{userCommentText2}</p>
+                                <p className="user-comment-name">por: <b>{userCommentName2}</b></p>
+                            </div>
+                        )}
 
-                            {userCommentText3 && userCommentName3 && (
-                                <div className="user-comment">
-                                    <p className="user-comment-text">{userCommentText3}</p>
-                                    <p className="user-comment-name">por: <b>{userCommentName3}</b></p>
-                                </div>
-                            )}
+                        {userCommentText3 && userCommentName3 && (
+                            <div className="user-comment">
+                                <p className="user-comment-text">{userCommentText3}</p>
+                                <p className="user-comment-name">por: <b>{userCommentName3}</b></p>
+                            </div>
+                        )}
 
 
 
-                            <form className="to-comment-container" onSubmit={handleCommentSubmit}>
-                                <img src={gabrielIcon} alt="ícone do perfil" className='user-comment-icon' />
-                                <textarea name="user-comment" placeholder='Comente algo...' className="to-comment-element" required></textarea>
-                                <button type='submit' className='to-comment-submit'>Enviar</button>
-                            </form>
+                        <form className="to-comment-container" onSubmit={handleCommentSubmit}>
+                            <img src={gabrielIcon} alt="ícone do perfil" className='user-comment-icon' />
+                            <textarea name="user-comment" placeholder='Comente algo...' className="to-comment-element" required></textarea>
+                            <button type='submit' className='to-comment-submit'>Enviar</button>
+                        </form>
 
-                        </section>
+                    </section>
 
-                        </CSSTransition>
-                    
+                </CSSTransition>
+
             </main>
         </div>
     );
