@@ -13,6 +13,11 @@ import Eventos from './Paginas/Eventos/Eventos';
 import Trilha from './Paginas/Trilha/Trilha';
 import Perfil from './Paginas/Perfil/Perfil';
 
+import BlocoComunicacao from './Paginas/Blocos/BlocoComunicacao/BlocoComunicacao';
+import BlocoSensorial from './Paginas/Blocos/BlocoSensorial/BlocoSensorial';
+import BlocoAdaptabilidade from './Paginas/Blocos/BlocoAdaptabilidade/BlocoAdaptabilidade';
+import BlocoTomadaDecisao from './Paginas/Blocos/BlocoTomadaDecisao/BlocoTomadaDecisao';
+
 function App() {
   return (
     <div className="App">
@@ -31,6 +36,11 @@ function App() {
 
         <Route path="/eventos" element={<Eventos/>} />
         <Route path="/trilha" element={<Trilha/>} />
+
+        <Route path="/trilha/comunicacao" element={<BlocoComunicacao />} />
+        <Route path="/trilha/sensorial" element={<BlocoSensorial />} />
+        <Route path="/trilha/adaptabilidade" element={<BlocoAdaptabilidade />} />
+        <Route path="/trilha/tomadadecisao" element={<BlocoTomadaDecisao />} />
       </Routes>
     </div>
   );

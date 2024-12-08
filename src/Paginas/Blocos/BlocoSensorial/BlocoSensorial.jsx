@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import Cena from './Componentes/Cena/Cena';
-import MapaTrilha from './Componentes/Mapa/MapaTrilha';
-import './Trilha.css';
+import { FaArrowLeft } from "react-icons/fa";
+import Ilha from '../Componentes/assets/imagens/SENSORIAL-BLOCO.png';
+import './BlocoSensorial.css';
 import { useNavigate } from 'react-router-dom';
+import Cena from '../Componentes/Cena/Cena';
 
-function Trilha() {
+function BlocoSensorial() {
   const navigate = useNavigate();
   const [currentSceneIndex, setCurrentSceneIndex] = useState(0);
   const [completedScenes, setCompletedScenes] = useState(false);
@@ -21,15 +22,12 @@ function Trilha() {
 
     setIsHandlingChoice(true);
 
-    if (usuario.novo === false) {
-      setCompletedScenes(true);
+    if (currentSceneIndex < cenas.length - 1) {
+      setCurrentSceneIndex((prevIndex) => prevIndex + 1);
     } else {
-      if (currentSceneIndex < cenas.length - 1) {
-        setCurrentSceneIndex((prevIndex) => prevIndex + 1);
-      } else {
-        setCompletedScenes(true);
-      }
+      setCompletedScenes(true);
     }
+    
 
     setTimeout(() => setIsHandlingChoice(false), 300);
   }, [usuario, currentSceneIndex, cenas.length, isHandlingChoice, completedScenes]);
@@ -58,7 +56,7 @@ function Trilha() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`${API_URL}/trilha`, {
+        const response = await fetch(`${API_URL}/sensorial-cenas`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -69,15 +67,11 @@ function Trilha() {
         if (response.ok) {
           const data = await response.json();
           setUsuario(data.usuario);
-          setCenas(data.trilha.cenasTrilha);
+          setCenas(data.cenas);
           setPersonagens(data.personagens);
-          setTrilha(data.trilha);
 
           console.log(data);
 
-          if (data.usuario.novo === false) {
-            setCompletedScenes(true);
-          }
         } else if (response.status === 401) {
           navigate('/comece-agora');
         }
@@ -97,32 +91,6 @@ function Trilha() {
         )
       : [];
 
-  useEffect(() => {
-    const sendPostRequest = async () => {
-      try {
-        const response = await fetch(`${API_URL}/trilha/beginning`, {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          credentials: 'include'
-        });
-
-        if (response.status === 200) {
-          console.log('Usuário marcado como não novo');
-        } else {
-          console.error('Erro ao enviar POST');
-        }
-      } catch (error) {
-        console.error('Erro na requisição POST', error);
-      }
-    };
-
-    if (completedScenes) {
-      sendPostRequest();
-    }
-  }, [completedScenes, API_URL]);
-
   return (
     <div>
       {!completedScenes && cenas.length > 0 && personagensNaCena.length > 0 ? (
@@ -140,11 +108,35 @@ function Trilha() {
           Carregando...
         </div>
       )}
-      <div className={`${completedScenes ? 'mapa-trilha-container' : 'mapa-trilha-desfocado'} MapaFundo`}>
-        <MapaTrilha />
+      
+      <div className={`${completedScenes ? 'mapa-Sensorial-container' : 'mapa-Sensorial-desfocado'} BlocoSensorial`}>
+      <button className="voltar-button" onClick={() => navigate("/trilha")}>
+                <FaArrowLeft className="icon" />
+            </button>
+
+            <div className='BlocoFundo'>
+                <div className='IlhaImagem'>
+                    <img src={Ilha} alt='Foto Ilha de Comunicação' />
+                    <div className='Bolinhas'>
+                        <div className='Bolinha1' onClick={() => navigate("/trilha/Sensorial/atividade=1")}>1</div>
+                        <div className='Bolinha2'>2</div>
+                        <div className='Bolinha3'>3</div>
+                        <div className='Bolinha4'>4</div>
+                        <div className='Bolinha5'>5</div>
+                        <div className='Bolinha6'>6</div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='infoilha'>
+                <h1>Sensorial</h1>
+                <p>Explore seus sentidos e percepção.</p>
+            </div>
       </div>
     </div>
   );
 }
 
-export default Trilha;
+export default BlocoSensorial;
+
+

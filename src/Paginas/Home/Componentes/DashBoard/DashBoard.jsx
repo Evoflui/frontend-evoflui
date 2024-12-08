@@ -7,10 +7,31 @@ import { useNavigate } from "react-router-dom";
 function DashBoard() {
     const navigate = useNavigate();
 
-    const handleRefTrilha = () => {
-        navigate('/trilha');
-    }
-
+    const handleRefTrilha = async () => {
+        try {
+            const response = await fetch('http://localhost:8080/trilha', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                credentials: 'include',
+            });
+    
+            if (response.ok) {
+                console.log('Requisição bem-sucedida:', await response.json());
+                navigate('/trilha');
+            } else {
+                console.error('Erro na requisição:', response.status);
+                if (response.status === 401) {
+                    navigate('/comece-agora');
+                }
+            }
+        } catch (error) {
+            console.error('Erro ao fazer a requisição:', error);
+            navigate('/erro-404');
+        }
+    };
+    
     const handleRefForum = () => {
         navigate('/forum');
     }
