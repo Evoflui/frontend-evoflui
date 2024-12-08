@@ -14,7 +14,7 @@ function Trilha() {
   const [personagens, setPersonagens] = useState([]);
   const [isHandlingChoice, setIsHandlingChoice] = useState(false);
 
-  const API_URL = "http://localhost:8080";
+  const API_URL = "http://34.171.119.210:8080";
 
   const handleChoice = useCallback(() => {
     if (isHandlingChoice || completedScenes) return;
