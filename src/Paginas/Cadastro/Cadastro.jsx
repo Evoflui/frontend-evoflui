@@ -61,7 +61,7 @@ function Cadastro() {
         }
 
         try {
-            const response = await fetch('http://localhost:8080/cadastro', {
+            const response = await fetch('http://34.171.119.210:8080/cadastro', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ function Cadastro() {
         }
         
         try {
-            const response = await fetch('http://localhost:8080/home', {
+            const response = await fetch('http://34.171.119.210:8080/home', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -121,7 +121,7 @@ function Cadastro() {
 
     useEffect(() => {
         const checkSession = async () => {
-            const response = await fetch('http://localhost:8080/cadastro', {
+            const response = await fetch('http://34.171.119.210:8080/cadastro', {
                 method: 'GET',
                 credentials: 'include',
             });

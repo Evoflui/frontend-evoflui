@@ -12,7 +12,7 @@ function HeaderInterno() {
         localStorage.removeItem('token');
         
         try {
-            const response = await fetch('http://localhost:8080/logout', {
+            const response = await fetch('http://34.171.119.210:8080/logout', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ function HeaderInterno() {
 
     const handleNavigateToTrilha = async () => {
         try {
-            const response = await fetch('http://localhost:8080/trilha', {
+            const response = await fetch('http://34.171.119.210:8080/trilha', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
