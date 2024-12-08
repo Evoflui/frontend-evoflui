@@ -1,0 +1,93 @@
+.BlocoAdaptabilidade .Bolinha1 {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+}
+.BlocoAdaptabilidade .Bolinha2 {
+    position: absolute;
+    top: 12%;
+    left: 38.5%;
+}
+.BlocoAdaptabilidade .Bolinha3 {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+.BlocoAdaptabilidade .Bolinha4 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+}
+.BlocoAdaptabilidade .Bolinha5 {
+    position: absolute;
+    top: 65%;
+    left: 35.5%;
+}
+.BlocoAdaptabilidade .Bolinha6 {
+    position: absolute;
+    top: 56.5%;
+    left: 60.5%;
+}
+
+.BlocoAdaptabilidade .Bolinhas div {
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none !important;
+    outline: none !important;
+    font-family: 'Carter One', sans-serif;
+    border-radius: 50%; /* Garante o formato redondo */
+    width: 60px;
+    font-size: 25px;
+    line-height: 1em;
+    letter-spacing: .1em;
+    font-weight: 800;
+    border: none;
+    margin: 15px 15px 30px;
+    background: #009CDE; /* Cor azul do Ilhacard */
+    border-bottom: 3px solid #007BA7; /* Borda mais escura do azul */
+    border-top: 3px solid #00C6FF; /* Borda mais clara do azul */
+    color: #fff !important;
+    padding: 15px;
+    box-shadow: 0 6px 0 #007BA7, 0 8px 1px 1px rgba(0, 0, 0, .3), 0 10px 0 5px #00C6FF, 0 12px 0 5px #007BA7, 0 15px 0 5px #00C6FF, 0 15px 1px 6px rgba(0, 0, 0, .3); /* Box-shadow adaptado ao azul */
+    display: flex; /* Centraliza o texto */
+    align-items: center;
+    justify-content: center;
+}
+
+.BlocoAdaptabilidade .Bolinhas div:hover {
+    line-height: .999em;
+    box-shadow: 0 4px 0 #007BA7, 0 6px 1px 1px rgba(0, 0, 0, .3), 0 8px 0 5px #00C6FF, 0 10px 0 5px #007BA7, 0 13px 0 5px #00C6FF, 0 13px 1px 6px rgba(0, 0, 0, .3);
+}
+
+.Bolinha2,
+.Bolinha3,
+.Bolinha4,
+.Bolinha5,
+.Bolinha6 {
+    background: #A9A9A9 !important; /* Cinza */
+    border-bottom: 3px solid #808080 !important; /* Borda cinza */
+    border-top: 3px solid #D3D3D3 !important; /* Borda cinza */
+    color: #fff !important;
+    box-shadow: 0 6px 0 #808080, 0 8px 1px 1px rgba(0, 0, 0, .3), 0 10px 0 5px #696969, 0 12px 0 5px #808080, 0 15px 0 5px #808080, 0 15px 1px 6px rgba(0, 0, 0, .3) !important;
+}
+
+.Bolinha2:hover,
+.Bolinha3:hover,
+.Bolinha4:hover,
+.Bolinha5:hover,
+.Bolinha6:hover {
+    box-shadow: 0 6px 0 #808080, 0 8px 1px 1px rgba(0, 0, 0, .3), 0 10px 0 5px #696969, 0 12px 0 5px #808080, 0 15px 0 5px #808080, 0 15px 1px 6px rgba(0, 0, 0, .3) !important;
+}
+
+.BlocoAdaptabilidade .infoilha {
+    position: fixed;
+    top: 20px;
+    right: -140px;
+    background-color: #009CDE;
+    transform: translateX(-50%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}

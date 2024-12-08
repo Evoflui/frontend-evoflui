@@ -8,7 +8,7 @@ function Cena({ cena, onClick, personagem, cenaId }) {
   const [indice, setIndice] = useState(0);
   const [digitarConcluido, setDigitarConcluido] = useState(false);
 
-  const FotoPersonagem = require(`../assets/imagens/${personagem.fotoPersonagem}`);
+  const FotoPersonagem = require(`../assets/imagens/personagens/${personagem.fotoPersonagem}`);
   const fraseCena = cena?.fraseCena || '';
   const escolhas = cena?.escolhas || [];
 

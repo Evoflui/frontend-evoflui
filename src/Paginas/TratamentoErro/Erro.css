@@ -1,9 +1,8 @@
-/* Estilos principais para a página de erro */
 .error-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Garantir que a altura ocupe toda a tela */
     background-color: #f8f8f8;
     font-family: 'Montserrat', sans-serif;
     color: #333;
@@ -12,14 +11,21 @@
 .error-content {
     text-align: center;
     max-width: 600px;
-    padding: 20px;
+    width: 100%; /* Ajusta a largura do conteúdo */
+    padding: 30px;
     background-color: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .error-image {
-   width: 70%;
+   width: 100%; /* Ajusta a imagem para não ultrapassar os limites do card */
+   max-width: 250px; /* Limita a largura da imagem */
+   margin-bottom: 20px;
 }
 
 .error-code {
@@ -50,7 +56,7 @@
 }
 
 .error-button:hover {
-    background-color: #601798;
+    background-color: #50148c; /* Leve alteração na cor para dar feedback no hover */
 }
 
 /* Adiciona um toque de animação no carregamento da página */

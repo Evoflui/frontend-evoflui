@@ -46,7 +46,7 @@ function Equipe() {
                         <div className='fotos'>
                             <img src={Gustavo} alt="Foto membro" />
                             <p className='nome'> Gustavo Portela </p>
-                            <p className='funcao'> UI/UX Designer & <br></br>
+                            <p className='funcao'> UX/UI Designer & <br></br>
                                 Desenvolvedor Front-end</p>
                         </div>
 
