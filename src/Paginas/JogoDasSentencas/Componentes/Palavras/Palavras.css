@@ -1,0 +1,10 @@
+.card-palavra{
+    padding: 5px;
+    border: 2px solid #858585;
+    border-radius: 10px;
+    color: #535353;
+    font-weight: 500;
+    font-size: 1.2rem;
+    box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
+    cursor: grab;
+}

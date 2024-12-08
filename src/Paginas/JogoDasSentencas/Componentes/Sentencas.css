@@ -1,0 +1,47 @@
+.main-jogo-das-sentencas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../../../assets/imagens/backgroud (1).png');
+    background-size: cover;
+    min-height: 100vh;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.header-jogo-das-sentencas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#8d23de00;
+    font-size: 1.2em;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 15px;
+}
+
+.titulo-jogo-sentencas{
+    color: #8D23DE;
+    font-weight: bold;
+}
+
+.conteudo-principal-jogo-sentencas{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+.titulo-fase-jogo-sentencas{
+    margin: auto 3rem;
+    font-size: 2.5rem;
+    color: rgb(71, 71, 71);
+}
+
+.imagem-jogo-das-sentencas{
+    margin: 2rem;
+    width: 25rem;
+    height: auto;
+}

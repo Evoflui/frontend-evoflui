@@ -14,6 +14,7 @@ import Trilha from './Paginas/Trilha/Trilha';
 import Perfil from './Paginas/Perfil/Perfil';
 import JogoDaMemoria from './Paginas/JogoDaMemoria/JogoDaMemoria';
 import Forum from './Paginas/Forum/Forum'
+import JogoDasSentencas from './Paginas/JogoDasSentencas/JogoDasSentencas';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/eventos" element={<Eventos/>} />
         <Route path="/trilha" element={<Trilha/>} />
         <Route path="/forum" element={<Forum/>} />
+        <Route path='/jogo-das-sentencas' element={<JogoDasSentencas/>}/>
       </Routes>
     </div>
   );
