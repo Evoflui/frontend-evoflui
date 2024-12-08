@@ -12,14 +12,14 @@ function TopContainer() {
 
     return (
         <div>
-            <section className="top-container">
-                <main className="container-info">
-                    <h1 className="container-title">Evolução e Conexão no Seu Ritmo</h1>
-                    <p className="container-text">Cada jornada é única, somos dedicados a apoiar o desenvolvimento social de
+            <section className="top-info-home-container">
+                <main className="top-home-container-info">
+                    <h1 className="top-home-container-title">Evolução e Conexão no Seu Ritmo</h1>
+                    <p className="top-home-container-text">Cada jornada é única, somos dedicados a apoiar o desenvolvimento social de
                         pessoas autistas, proporcionando um espaço inclusivo, acessível e repleto de
                         oportunidades. Junte-se a nós e descubra como evoluir e fluir com confiança
                         no seu próprio tempo.</p>
-                        <div className="container-buttons">
+                        <div className="top-home-container-buttons">
                             <a href='comece-agora' className="signup-button">Comece agora</a>
                             <a href='comece-agora' className="signin-button">Já tenho conta</a>
                         </div>

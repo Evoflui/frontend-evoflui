@@ -2,6 +2,7 @@ import React from "react";
 import './DashBoard.css';
 import Forum from '../../../../assets/imagens/forum.svg';
 import Eventos from '../../../../assets/imagens/eventos.svg';
+import Trilha from '../../../../assets/imagens/trilhaLivros.svg'
 import { useNavigate } from "react-router-dom";
 
 function DashBoard() {
@@ -37,7 +38,7 @@ function DashBoard() {
     }
 
     const handleRefMapa = () => {
-        navigate('/mapa');
+        navigate('/eventos');
     }
     return (
         <div className="container-dashboard">
@@ -45,7 +46,7 @@ function DashBoard() {
 
             <div className="cards-container">
                 <div className="card-dashboard" onClick={handleRefTrilha}>
-                    <img src={Forum} alt="Pilha de livros com um fundo desfocado" />
+                    <img src={Trilha} alt="Pilha de livros com um fundo desfocado" />
                     <div className="textos-card">
                         <p className="titulo-card-dashboard">Trilha de Desenvolvimento</p>
                         <p className="descricao-card-dashboard">

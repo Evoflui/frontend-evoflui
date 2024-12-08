@@ -1,0 +1,115 @@
+.main-jogo-da-memoria {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../../../assets/imagens/backgroud (1).png');
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+.header-jogo-da-memoria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    margin: 0 0 30px;
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 400ms ease; 
+    transform-style: preserve-3d;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #d92378;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.back {
+    backface-visibility: hidden;
+}
+
+.face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.reveal-card {
+    transform: rotateY(180deg);
+}
+
+.disabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 920px) {
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.reiniciar-botao-container, .voltar-home-botao-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reiniciar-jogo, .voltar-home {
+  background-color: #d92378;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.reiniciar-jogo:hover, .voltar-home:hover {
+  background-color: #e72d84;
+}
+
+
+.titulo-jogo-memoria{
+    margin-bottom: 20px;
+    color: #d92378;
+    font-size: 30px;
+    font-weight: bold;
+}

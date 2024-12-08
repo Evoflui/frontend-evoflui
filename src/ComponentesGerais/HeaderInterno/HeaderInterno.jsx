@@ -66,10 +66,10 @@ function HeaderInterno() {
                             Trilha
                         </Link>
                     </li>
-                    <li id="lista-item-interno"><Link to="/" id="lista-item-link-interno">Fórum</Link></li>
+                    <li id="lista-item-interno"><Link to="/forum" id="lista-item-link-interno">Fórum</Link></li>
                     <li id="lista-item-interno"><Link to="/eventos" id="lista-item-link-interno">Eventos</Link></li>
                     <li id="lista-item-interno"><Link to="/perfil" id="lista-item-botao-interno">Ver perfil</Link></li>
-                    <img src={Sair} onClick={handleLogout} alt="Icone de saída" />
+                    <img src={Sair} onClick={handleLogout} alt="Icone de saída" className='botao-de-saida-header'/>
                 </div>
             </section>
         </div>

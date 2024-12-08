@@ -11,12 +11,12 @@ html {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 20px;
   margin: 5px 0 15px 0;
-  transition: 0.9s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .container-evento-mapa-eventos:hover {
-  padding: 30px;
-  margin: 15px 0 25px 0;
+  transition: 1s;
+  transform: scale(1.04);
 }
 
 .container-titulo-mapa-eventos {
