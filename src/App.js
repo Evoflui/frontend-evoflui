@@ -14,6 +14,7 @@ import Trilha from './Paginas/Trilha/Trilha';
 import Perfil from './Paginas/Perfil/Perfil';
 import JogoDaMemoria from './Paginas/JogoDaMemoria/JogoDaMemoria';
 import Forum from './Paginas/Forum/Forum';
+import JogoDasSentencas from './Paginas/JogoDasSentencas/JogoDasSentencas';
 
 import BlocoComunicacao from './Paginas/Blocos/BlocoComunicacao/BlocoComunicacao';
 import BlocoSensorial from './Paginas/Blocos/BlocoSensorial/BlocoSensorial';
@@ -65,6 +66,7 @@ function App() {
         <Route path="/erro-404" element={<Erro />} />
         <Route path="/home" element={<Home />} />
         <Route path="/trilha/comunicacao/atividade=1" element={<JogoDaMemoria />} />
+        <Route path='trilha/adaptabilidade/atividade=1' element={<JogoDasSentencas />}/>
         <Route path="/eventos" element={<Eventos />} />
         <Route path="/trilha" element={<Trilha />} />
         <Route path="/forum" element={<Forum />} />

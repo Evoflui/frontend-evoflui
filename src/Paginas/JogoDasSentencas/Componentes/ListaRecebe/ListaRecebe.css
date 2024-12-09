@@ -1,4 +1,4 @@
-.lista-recebe-palavras{
+/* .lista-recebe-palavras{
     padding: 10px;
     width: 50vw;
     max-width: 70vw;
@@ -11,4 +11,27 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-}
+} */
+
+.lista-recebe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px dashed #6aa84f;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 30vw;
+    min-height: 50px;
+    justify-content: center;
+  }
+  
+  .palavra-recebe {
+    background-color: #d9ead3;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
