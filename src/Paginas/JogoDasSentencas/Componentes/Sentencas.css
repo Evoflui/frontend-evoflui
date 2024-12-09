@@ -89,3 +89,14 @@
     align-items: center;
     margin-top: 1rem;
 }
+
+.lista-recebe-container {
+    transition: background-color 0.3s ease;
+  }
+  
+  .lista-recebe-container.erro {
+    background-color: #ffcccc; /* Vermelho claro */
+    border: 2px solid #ff0000; /* Bordas vermelhas */
+    border-radius: 8px;
+  }
+  
