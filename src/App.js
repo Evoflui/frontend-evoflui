@@ -66,7 +66,7 @@ function App() {
         <Route path="/erro-404" element={<Erro />} />
         <Route path="/home" element={<Home />} />
         <Route path="/trilha/comunicacao/atividade=1" element={<JogoDaMemoria />} />
-        <Route path='trilha/adaptabilidade/atividade=1' element={<JogoDasSentencas />}/>
+        <Route path='/trilha/adaptabilidade/atividade=1' element={<JogoDasSentencas />}/>
         <Route path="/eventos" element={<Eventos />} />
         <Route path="/trilha" element={<Trilha />} />
         <Route path="/forum" element={<Forum />} />

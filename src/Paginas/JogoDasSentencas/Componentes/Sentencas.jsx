@@ -52,39 +52,55 @@ import ListaDoadora from "../../../Paginas/JogoDasSentencas/Componentes/ListaDoa
 import ListaRecebe from "../../../Paginas/JogoDasSentencas/Componentes/ListaRecebe/ListaRecebe";
 
 function Sentencas() {
-  const palavrasIniciais = ["Os", "livros", "são", "coloridos"];
-  const [palavrasDoadoras, setPalavrasDoadoras] = useState(palavrasIniciais);
-  const [palavrasRecebidas, setPalavrasRecebidas] = useState([]);
+    const palavrasIniciais = ["Os", "livros", "são", "coloridos"];
+    const [palavrasDoadoras, setPalavrasDoadoras] = useState(palavrasIniciais);
+    const [palavrasRecebidas, setPalavrasRecebidas] = useState([]);
 
-  const moverParaRecebe = (palavra) => {
-    setPalavrasDoadoras(palavrasDoadoras.filter((p) => p !== palavra));
-    setPalavrasRecebidas([...palavrasRecebidas, palavra]);
-  };
+    const moverParaRecebe = (palavra) => {
+        setPalavrasDoadoras(palavrasDoadoras.filter((p) => p !== palavra));
+        setPalavrasRecebidas([...palavrasRecebidas, palavra]);
+    };
 
-  const resetarListas = () => {
-    setPalavrasDoadoras(palavrasIniciais);
-    setPalavrasRecebidas([]);
-  };
+    const resetarListas = () => {
+        setPalavrasDoadoras(palavrasIniciais);
+        setPalavrasRecebidas([]);
+    };
 
-  return (
-    <main style={{ backgroundImage: `url(${BackgroundSentencas})` }} className="main-jogo-das-sentencas">
-      <header className="header-jogo-das-sentencas">
-        <h1 className="titulo-jogo-sentencas"> Jogo das Sentenças </h1>
-      </header>
+    const validarSentenca = () => {
+        const sentencaEsperada = ["Os", "livros", "são", "coloridos"];
+        if (JSON.stringify(palavrasRecebidas) === JSON.stringify(sentencaEsperada)) {
+            alert("Parabéns! Você montou a sentença correta!");
+        } else {
+            alert("A sentença está incorreta. Tente novamente!");
+        }
+    };
 
-      <div className="conteudo-principal-jogo-sentencas">
-        <h2 className="titulo-fase-jogo-sentencas">Fase n° 1</h2>
-        <img src={ImagemReferencia} alt="Imagem de referência" className="imagem-jogo-das-sentencas" />
+    return (
+        <main style={{ backgroundImage: `url(${BackgroundSentencas})` }} className="main-jogo-das-sentencas">
+            <header className="header-jogo-das-sentencas">
+                <h1 className="titulo-jogo-sentencas"> Jogo das Sentenças </h1>
+            </header>
 
-        <ListaRecebe palavras={palavrasRecebidas} />
-        <ListaDoadora palavras={palavrasDoadoras} moverParaRecebe={moverParaRecebe} />
+            <div className="conteudo-principal-jogo-sentencas">
+                <h2 className="titulo-fase-jogo-sentencas">Fase n° 1</h2>
+                <img src={ImagemReferencia} alt="Imagem de referência" className="imagem-jogo-das-sentencas" />
 
-        <button className="botao-resetar" onClick={resetarListas}>
-          Resetar
-        </button>
-      </div>
-    </main>
-  );
+                <ListaRecebe palavras={palavrasRecebidas} />
+                <ListaDoadora palavras={palavrasDoadoras} moverParaRecebe={moverParaRecebe} />
+
+                <div className="container-botoes-controle">
+                <button className="botao-resetar" onClick={resetarListas}>
+                    Resetar
+                </button>
+
+                <button className="botao-validar" onClick={validarSentenca}>
+                    Validar Sentença
+                </button>
+                </div>
+
+            </div>
+        </main>
+    );
 }
 
 export default Sentencas;

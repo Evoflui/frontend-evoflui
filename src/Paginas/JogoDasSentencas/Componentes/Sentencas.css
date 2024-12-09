@@ -47,7 +47,6 @@
 }
 
 .botao-resetar {
-    margin-top: 20px;
     padding: 10px 20px;
     background-color: #8D23DE;
     color: white;
@@ -56,9 +55,37 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
+}
   
-  .botao-resetar:hover {
+.botao-resetar:hover {
     background-color: #D92378;
-  }
+}
+ 
+.botao-validar {
+    padding: 10px 20px;
+    background-color: #8D23DE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
   
+.botao-validar:hover {
+    background-color: #D92378;
+}
+  
+
+.container-botoes-controle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+    background-color: #FFDE00;
+    border-radius: 10px;
+
+    align-items: center;
+    margin-top: 1rem;
+}
