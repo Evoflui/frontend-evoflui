@@ -10,7 +10,7 @@ function DashBoard() {
 
     const handleRefTrilha = async () => {
         try {
-            const response = await fetch('http://34.171.119.210:8080/trilha', {
+            const response = await fetch('https://typcalsolution.com.br/trilha', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

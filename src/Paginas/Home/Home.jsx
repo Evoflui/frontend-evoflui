@@ -12,7 +12,7 @@ function Home(){
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://34.171.119.210:8080/home', {
+                const response = await fetch('https://typcalsolution.com.br/home', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
